@@ -1,0 +1,676 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData angular-ui-router
+20 silly mapToRegistry name angular-ui-router
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'angular-ui-router',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'angular-ui-router',
+23 silly mapToRegistry   name: 'angular-ui-router',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/angular-ui-router
+25 silly fetchNamedPackageData ng-local-storage
+26 silly mapToRegistry name ng-local-storage
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'ng-local-storage',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'ng-local-storage',
+29 silly mapToRegistry   name: 'ng-local-storage',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/ng-local-storage
+31 verbose request uri https://registry.npmjs.org/ng-local-storage
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 5:19:24 PM
+34 verbose request id 65d4bdacbab24ef3
+35 http request GET https://registry.npmjs.org/ng-local-storage
+36 verbose request uri https://registry.npmjs.org/angular-ui-router
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 5:19:24 PM
+39 verbose etag "8FOUG69DEM3HT01B8WBKQFUW3"
+40 http request GET https://registry.npmjs.org/angular-ui-router
+41 http 304 https://registry.npmjs.org/angular-ui-router
+42 verbose headers { date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   'cache-control': 'max-age=300',
+42 verbose headers   etag: '"8FOUG69DEM3HT01B8WBKQFUW3"',
+42 verbose headers   age: '123',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-served-by': 'cache-iad2134-IAD',
+42 verbose headers   'x-cache': 'HIT',
+42 verbose headers   'x-cache-hits': '2',
+42 verbose headers   'x-timer': 'S1478121564.693493,VS0,VE0',
+42 verbose headers   vary: 'Accept-Encoding' }
+43 silly get cb [ 304,
+43 silly get   { date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     'cache-control': 'max-age=300',
+43 silly get     etag: '"8FOUG69DEM3HT01B8WBKQFUW3"',
+43 silly get     age: '123',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-iad2134-IAD',
+43 silly get     'x-cache': 'HIT',
+43 silly get     'x-cache-hits': '2',
+43 silly get     'x-timer': 'S1478121564.693493,VS0,VE0',
+43 silly get     vary: 'Accept-Encoding' } ]
+44 verbose etag https://registry.npmjs.org/angular-ui-router from cache
+45 verbose get saving angular-ui-router to /Users/chloecollier/.npm/registry.npmjs.org/angular-ui-router/.cache.json
+46 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+47 silly resolveWithNewModule angular-ui-router@0.3.1 checking installable status
+48 silly cache add args [ 'angular-ui-router@^0.3.1', null ]
+49 verbose cache add spec angular-ui-router@^0.3.1
+50 silly cache add parsed spec Result {
+50 silly cache add   raw: 'angular-ui-router@^0.3.1',
+50 silly cache add   scope: null,
+50 silly cache add   escapedName: 'angular-ui-router',
+50 silly cache add   name: 'angular-ui-router',
+50 silly cache add   rawSpec: '^0.3.1',
+50 silly cache add   spec: '>=0.3.1 <0.4.0',
+50 silly cache add   type: 'range' }
+51 silly addNamed angular-ui-router@>=0.3.1 <0.4.0
+52 verbose addNamed ">=0.3.1 <0.4.0" is a valid semver range for angular-ui-router
+53 silly addNameRange { name: 'angular-ui-router',
+53 silly addNameRange   range: '>=0.3.1 <0.4.0',
+53 silly addNameRange   hasData: false }
+54 silly mapToRegistry name angular-ui-router
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'angular-ui-router',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   escapedName: 'angular-ui-router',
+57 silly mapToRegistry   name: 'angular-ui-router',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/angular-ui-router
+59 verbose addNameRange registry:https://registry.npmjs.org/angular-ui-router not in flight; fetching
+60 verbose get https://registry.npmjs.org/angular-ui-router not expired, no request
+61 silly addNameRange number 2 { name: 'angular-ui-router',
+61 silly addNameRange   range: '>=0.3.1 <0.4.0',
+61 silly addNameRange   hasData: true }
+62 silly addNameRange versions [ 'angular-ui-router',
+62 silly addNameRange   [ '0.2.7',
+62 silly addNameRange     '0.2.8',
+62 silly addNameRange     '0.2.10',
+62 silly addNameRange     '0.2.11',
+62 silly addNameRange     '0.2.13',
+62 silly addNameRange     '0.2.14',
+62 silly addNameRange     '0.2.15',
+62 silly addNameRange     '0.2.16',
+62 silly addNameRange     '0.2.17',
+62 silly addNameRange     '0.2.18',
+62 silly addNameRange     '1.0.0-alpha.1',
+62 silly addNameRange     '1.0.0-alpha.2',
+62 silly addNameRange     '1.0.0-alpha.3',
+62 silly addNameRange     '1.0.0-alpha.4',
+62 silly addNameRange     '1.0.0-alpha.5',
+62 silly addNameRange     '0.3.0',
+62 silly addNameRange     '0.3.1',
+62 silly addNameRange     '1.0.0-beta.1',
+62 silly addNameRange     '1.0.0-beta.2',
+62 silly addNameRange     '1.0.0-beta.3' ] ]
+63 silly addNamed angular-ui-router@0.3.1
+64 verbose addNamed "0.3.1" is a plain semver version for angular-ui-router
+65 silly cache afterAdd angular-ui-router@0.3.1
+66 verbose afterAdd /Users/chloecollier/.npm/angular-ui-router/0.3.1/package/package.json not in flight; writing
+67 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+68 verbose afterAdd /Users/chloecollier/.npm/angular-ui-router/0.3.1/package/package.json written
+69 http 200 https://registry.npmjs.org/ng-local-storage
+70 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+70 verbose headers   etag: '"AQUWTTYLTC37FASQ6XO0KMPBI"',
+70 verbose headers   'content-type': 'application/json',
+70 verbose headers   'content-encoding': 'gzip',
+70 verbose headers   'cache-control': 'max-age=300',
+70 verbose headers   'content-length': '2579',
+70 verbose headers   'accept-ranges': 'bytes',
+70 verbose headers   date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+70 verbose headers   via: '1.1 varnish',
+70 verbose headers   age: '0',
+70 verbose headers   connection: 'keep-alive',
+70 verbose headers   'x-served-by': 'cache-iad2648-IAD',
+70 verbose headers   'x-cache': 'MISS',
+70 verbose headers   'x-cache-hits': '0',
+70 verbose headers   'x-timer': 'S1478121564.690522,VS0,VE118',
+70 verbose headers   vary: 'Accept-Encoding' }
+71 silly get cb [ 200,
+71 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+71 silly get     etag: '"AQUWTTYLTC37FASQ6XO0KMPBI"',
+71 silly get     'content-type': 'application/json',
+71 silly get     'content-encoding': 'gzip',
+71 silly get     'cache-control': 'max-age=300',
+71 silly get     'content-length': '2579',
+71 silly get     'accept-ranges': 'bytes',
+71 silly get     date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+71 silly get     via: '1.1 varnish',
+71 silly get     age: '0',
+71 silly get     connection: 'keep-alive',
+71 silly get     'x-served-by': 'cache-iad2648-IAD',
+71 silly get     'x-cache': 'MISS',
+71 silly get     'x-cache-hits': '0',
+71 silly get     'x-timer': 'S1478121564.690522,VS0,VE118',
+71 silly get     vary: 'Accept-Encoding' } ]
+72 verbose get saving ng-local-storage to /Users/chloecollier/.npm/registry.npmjs.org/ng-local-storage/.cache.json
+73 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+74 silly resolveWithNewModule ng-local-storage@0.1.0 checking installable status
+75 silly cache add args [ 'ng-local-storage@^0.1.0', null ]
+76 verbose cache add spec ng-local-storage@^0.1.0
+77 silly cache add parsed spec Result {
+77 silly cache add   raw: 'ng-local-storage@^0.1.0',
+77 silly cache add   scope: null,
+77 silly cache add   escapedName: 'ng-local-storage',
+77 silly cache add   name: 'ng-local-storage',
+77 silly cache add   rawSpec: '^0.1.0',
+77 silly cache add   spec: '>=0.1.0 <0.2.0',
+77 silly cache add   type: 'range' }
+78 silly addNamed ng-local-storage@>=0.1.0 <0.2.0
+79 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for ng-local-storage
+80 silly addNameRange { name: 'ng-local-storage',
+80 silly addNameRange   range: '>=0.1.0 <0.2.0',
+80 silly addNameRange   hasData: false }
+81 silly mapToRegistry name ng-local-storage
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry data Result {
+84 silly mapToRegistry   raw: 'ng-local-storage',
+84 silly mapToRegistry   scope: null,
+84 silly mapToRegistry   escapedName: 'ng-local-storage',
+84 silly mapToRegistry   name: 'ng-local-storage',
+84 silly mapToRegistry   rawSpec: '',
+84 silly mapToRegistry   spec: 'latest',
+84 silly mapToRegistry   type: 'tag' }
+85 silly mapToRegistry uri https://registry.npmjs.org/ng-local-storage
+86 verbose addNameRange registry:https://registry.npmjs.org/ng-local-storage not in flight; fetching
+87 verbose get https://registry.npmjs.org/ng-local-storage not expired, no request
+88 silly addNameRange number 2 { name: 'ng-local-storage',
+88 silly addNameRange   range: '>=0.1.0 <0.2.0',
+88 silly addNameRange   hasData: true }
+89 silly addNameRange versions [ 'ng-local-storage',
+89 silly addNameRange   [ '0.0.0',
+89 silly addNameRange     '0.0.1',
+89 silly addNameRange     '0.0.2',
+89 silly addNameRange     '0.0.3',
+89 silly addNameRange     '0.0.4',
+89 silly addNameRange     '0.0.5',
+89 silly addNameRange     '0.0.6',
+89 silly addNameRange     '0.1.0' ] ]
+90 silly addNamed ng-local-storage@0.1.0
+91 verbose addNamed "0.1.0" is a plain semver version for ng-local-storage
+92 silly mapToRegistry name ng-local-storage
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry data Result {
+95 silly mapToRegistry   raw: 'ng-local-storage',
+95 silly mapToRegistry   scope: null,
+95 silly mapToRegistry   escapedName: 'ng-local-storage',
+95 silly mapToRegistry   name: 'ng-local-storage',
+95 silly mapToRegistry   rawSpec: '',
+95 silly mapToRegistry   spec: 'latest',
+95 silly mapToRegistry   type: 'tag' }
+96 silly mapToRegistry uri https://registry.npmjs.org/ng-local-storage
+97 verbose addRemoteTarball https://registry.npmjs.org/ng-local-storage/-/ng-local-storage-0.1.0.tgz not in flight; adding
+98 verbose addRemoteTarball [ 'https://registry.npmjs.org/ng-local-storage/-/ng-local-storage-0.1.0.tgz',
+98 verbose addRemoteTarball   'af99e58be427c9b2531b42319f2e7ccc12cd77af' ]
+99 info retry fetch attempt 1 at 5:19:24 PM
+100 info attempt registry request try #1 at 5:19:24 PM
+101 http fetch GET https://registry.npmjs.org/ng-local-storage/-/ng-local-storage-0.1.0.tgz
+102 http fetch 200 https://registry.npmjs.org/ng-local-storage/-/ng-local-storage-0.1.0.tgz
+103 silly fetchAndShaCheck shasum af99e58be427c9b2531b42319f2e7ccc12cd77af
+104 verbose addTmpTarball /var/folders/st/83x2x7xn0_11dfv96zl0k40h0000gn/T/npm-7691-9cc662b6/registry.npmjs.org/ng-local-storage/-/ng-local-storage-0.1.0.tgz not in flight; adding
+105 verbose addTmpTarball already have metadata; skipping unpack for ng-local-storage@0.1.0
+106 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+107 silly cache afterAdd ng-local-storage@0.1.0
+108 verbose afterAdd /Users/chloecollier/.npm/ng-local-storage/0.1.0/package/package.json not in flight; writing
+109 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+110 verbose afterAdd /Users/chloecollier/.npm/ng-local-storage/0.1.0/package/package.json written
+111 silly fetchNamedPackageData browser-ls
+112 silly mapToRegistry name browser-ls
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry data Result {
+115 silly mapToRegistry   raw: 'browser-ls',
+115 silly mapToRegistry   scope: null,
+115 silly mapToRegistry   escapedName: 'browser-ls',
+115 silly mapToRegistry   name: 'browser-ls',
+115 silly mapToRegistry   rawSpec: '',
+115 silly mapToRegistry   spec: 'latest',
+115 silly mapToRegistry   type: 'tag' }
+116 silly mapToRegistry uri https://registry.npmjs.org/browser-ls
+117 verbose request uri https://registry.npmjs.org/browser-ls
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 5:19:24 PM
+120 http request GET https://registry.npmjs.org/browser-ls
+121 http 200 https://registry.npmjs.org/browser-ls
+122 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+122 verbose headers   etag: '"ELSGUF7B0QK9F3D5K1TNI6FQO"',
+122 verbose headers   'content-type': 'application/json',
+122 verbose headers   'content-encoding': 'gzip',
+122 verbose headers   'cache-control': 'max-age=300',
+122 verbose headers   'content-length': '3878',
+122 verbose headers   'accept-ranges': 'bytes',
+122 verbose headers   date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+122 verbose headers   via: '1.1 varnish',
+122 verbose headers   age: '0',
+122 verbose headers   connection: 'keep-alive',
+122 verbose headers   'x-served-by': 'cache-iad2648-IAD',
+122 verbose headers   'x-cache': 'MISS',
+122 verbose headers   'x-cache-hits': '0',
+122 verbose headers   'x-timer': 'S1478121564.890939,VS0,VE22',
+122 verbose headers   vary: 'Accept-Encoding' }
+123 silly get cb [ 200,
+123 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+123 silly get     etag: '"ELSGUF7B0QK9F3D5K1TNI6FQO"',
+123 silly get     'content-type': 'application/json',
+123 silly get     'content-encoding': 'gzip',
+123 silly get     'cache-control': 'max-age=300',
+123 silly get     'content-length': '3878',
+123 silly get     'accept-ranges': 'bytes',
+123 silly get     date: 'Wed, 02 Nov 2016 21:19:24 GMT',
+123 silly get     via: '1.1 varnish',
+123 silly get     age: '0',
+123 silly get     connection: 'keep-alive',
+123 silly get     'x-served-by': 'cache-iad2648-IAD',
+123 silly get     'x-cache': 'MISS',
+123 silly get     'x-cache-hits': '0',
+123 silly get     'x-timer': 'S1478121564.890939,VS0,VE22',
+123 silly get     vary: 'Accept-Encoding' } ]
+124 verbose get saving browser-ls to /Users/chloecollier/.npm/registry.npmjs.org/browser-ls/.cache.json
+125 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+126 silly resolveWithNewModule browser-ls@1.4.0 checking installable status
+127 silly cache add args [ 'browser-ls@1.4.*', null ]
+128 verbose cache add spec browser-ls@1.4.*
+129 silly cache add parsed spec Result {
+129 silly cache add   raw: 'browser-ls@1.4.*',
+129 silly cache add   scope: null,
+129 silly cache add   escapedName: 'browser-ls',
+129 silly cache add   name: 'browser-ls',
+129 silly cache add   rawSpec: '1.4.*',
+129 silly cache add   spec: '>=1.4.0 <1.5.0',
+129 silly cache add   type: 'range' }
+130 silly addNamed browser-ls@>=1.4.0 <1.5.0
+131 verbose addNamed ">=1.4.0 <1.5.0" is a valid semver range for browser-ls
+132 silly addNameRange { name: 'browser-ls', range: '>=1.4.0 <1.5.0', hasData: false }
+133 silly mapToRegistry name browser-ls
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'browser-ls',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   escapedName: 'browser-ls',
+136 silly mapToRegistry   name: 'browser-ls',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/browser-ls
+138 verbose addNameRange registry:https://registry.npmjs.org/browser-ls not in flight; fetching
+139 verbose get https://registry.npmjs.org/browser-ls not expired, no request
+140 silly addNameRange number 2 { name: 'browser-ls', range: '>=1.4.0 <1.5.0', hasData: true }
+141 silly addNameRange versions [ 'browser-ls',
+141 silly addNameRange   [ '1.0.0', '1.1.0', '1.1.1', '1.1.11', '1.2.0', '1.3.0', '1.4.0' ] ]
+142 silly addNamed browser-ls@1.4.0
+143 verbose addNamed "1.4.0" is a plain semver version for browser-ls
+144 silly mapToRegistry name browser-ls
+145 silly mapToRegistry using default registry
+146 silly mapToRegistry registry https://registry.npmjs.org/
+147 silly mapToRegistry data Result {
+147 silly mapToRegistry   raw: 'browser-ls',
+147 silly mapToRegistry   scope: null,
+147 silly mapToRegistry   escapedName: 'browser-ls',
+147 silly mapToRegistry   name: 'browser-ls',
+147 silly mapToRegistry   rawSpec: '',
+147 silly mapToRegistry   spec: 'latest',
+147 silly mapToRegistry   type: 'tag' }
+148 silly mapToRegistry uri https://registry.npmjs.org/browser-ls
+149 verbose addRemoteTarball https://registry.npmjs.org/browser-ls/-/browser-ls-1.4.0.tgz not in flight; adding
+150 verbose addRemoteTarball [ 'https://registry.npmjs.org/browser-ls/-/browser-ls-1.4.0.tgz',
+150 verbose addRemoteTarball   '0feb75869e7b1f82db3d944904c23d667d8383b6' ]
+151 info retry fetch attempt 1 at 5:19:24 PM
+152 info attempt registry request try #1 at 5:19:24 PM
+153 http fetch GET https://registry.npmjs.org/browser-ls/-/browser-ls-1.4.0.tgz
+154 http fetch 200 https://registry.npmjs.org/browser-ls/-/browser-ls-1.4.0.tgz
+155 silly fetchAndShaCheck shasum 0feb75869e7b1f82db3d944904c23d667d8383b6
+156 verbose addTmpTarball /var/folders/st/83x2x7xn0_11dfv96zl0k40h0000gn/T/npm-7691-9cc662b6/registry.npmjs.org/browser-ls/-/browser-ls-1.4.0.tgz not in flight; adding
+157 verbose addTmpTarball already have metadata; skipping unpack for browser-ls@1.4.0
+158 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+159 silly cache afterAdd browser-ls@1.4.0
+160 verbose afterAdd /Users/chloecollier/.npm/browser-ls/1.4.0/package/package.json not in flight; writing
+161 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+162 verbose afterAdd /Users/chloecollier/.npm/browser-ls/1.4.0/package/package.json written
+163 silly fetchNamedPackageData safejson
+164 silly mapToRegistry name safejson
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry data Result {
+167 silly mapToRegistry   raw: 'safejson',
+167 silly mapToRegistry   scope: null,
+167 silly mapToRegistry   escapedName: 'safejson',
+167 silly mapToRegistry   name: 'safejson',
+167 silly mapToRegistry   rawSpec: '',
+167 silly mapToRegistry   spec: 'latest',
+167 silly mapToRegistry   type: 'tag' }
+168 silly mapToRegistry uri https://registry.npmjs.org/safejson
+169 silly fetchNamedPackageData async
+170 silly mapToRegistry name async
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry data Result {
+173 silly mapToRegistry   raw: 'async',
+173 silly mapToRegistry   scope: null,
+173 silly mapToRegistry   escapedName: 'async',
+173 silly mapToRegistry   name: 'async',
+173 silly mapToRegistry   rawSpec: '',
+173 silly mapToRegistry   spec: 'latest',
+173 silly mapToRegistry   type: 'tag' }
+174 silly mapToRegistry uri https://registry.npmjs.org/async
+175 verbose request uri https://registry.npmjs.org/safejson
+176 verbose request no auth needed
+177 info attempt registry request try #1 at 5:19:25 PM
+178 http request GET https://registry.npmjs.org/safejson
+179 verbose request uri https://registry.npmjs.org/async
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 5:19:25 PM
+182 verbose etag "OB3U450MFX8H10711MJPZK6K"
+183 http request GET https://registry.npmjs.org/async
+184 http 200 https://registry.npmjs.org/async
+185 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+185 verbose headers   etag: '"TYWZSMRYAU3GDT7WPSW1FDUQ"',
+185 verbose headers   'content-type': 'application/json',
+185 verbose headers   'content-encoding': 'gzip',
+185 verbose headers   'cache-control': 'max-age=300',
+185 verbose headers   'content-length': '17895',
+185 verbose headers   'accept-ranges': 'bytes',
+185 verbose headers   date: 'Wed, 02 Nov 2016 21:19:25 GMT',
+185 verbose headers   via: '1.1 varnish',
+185 verbose headers   age: '8',
+185 verbose headers   connection: 'keep-alive',
+185 verbose headers   'x-served-by': 'cache-iad2134-IAD',
+185 verbose headers   'x-cache': 'HIT',
+185 verbose headers   'x-cache-hits': '2307',
+185 verbose headers   'x-timer': 'S1478121565.016847,VS0,VE0',
+185 verbose headers   vary: 'Accept-Encoding' }
+186 silly get cb [ 200,
+186 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+186 silly get     etag: '"TYWZSMRYAU3GDT7WPSW1FDUQ"',
+186 silly get     'content-type': 'application/json',
+186 silly get     'content-encoding': 'gzip',
+186 silly get     'cache-control': 'max-age=300',
+186 silly get     'content-length': '17895',
+186 silly get     'accept-ranges': 'bytes',
+186 silly get     date: 'Wed, 02 Nov 2016 21:19:25 GMT',
+186 silly get     via: '1.1 varnish',
+186 silly get     age: '8',
+186 silly get     connection: 'keep-alive',
+186 silly get     'x-served-by': 'cache-iad2134-IAD',
+186 silly get     'x-cache': 'HIT',
+186 silly get     'x-cache-hits': '2307',
+186 silly get     'x-timer': 'S1478121565.016847,VS0,VE0',
+186 silly get     vary: 'Accept-Encoding' } ]
+187 verbose get saving async to /Users/chloecollier/.npm/registry.npmjs.org/async/.cache.json
+188 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+189 silly resolveWithNewModule async@0.9.2 checking installable status
+190 silly cache add args [ 'async@~0.9.0', null ]
+191 verbose cache add spec async@~0.9.0
+192 silly cache add parsed spec Result {
+192 silly cache add   raw: 'async@~0.9.0',
+192 silly cache add   scope: null,
+192 silly cache add   escapedName: 'async',
+192 silly cache add   name: 'async',
+192 silly cache add   rawSpec: '~0.9.0',
+192 silly cache add   spec: '>=0.9.0 <0.10.0',
+192 silly cache add   type: 'range' }
+193 silly addNamed async@>=0.9.0 <0.10.0
+194 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for async
+195 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+196 silly mapToRegistry name async
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry data Result {
+199 silly mapToRegistry   raw: 'async',
+199 silly mapToRegistry   scope: null,
+199 silly mapToRegistry   escapedName: 'async',
+199 silly mapToRegistry   name: 'async',
+199 silly mapToRegistry   rawSpec: '',
+199 silly mapToRegistry   spec: 'latest',
+199 silly mapToRegistry   type: 'tag' }
+200 silly mapToRegistry uri https://registry.npmjs.org/async
+201 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+202 verbose get https://registry.npmjs.org/async not expired, no request
+203 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+204 silly addNameRange versions [ 'async',
+204 silly addNameRange   [ '0.1.0',
+204 silly addNameRange     '0.1.1',
+204 silly addNameRange     '0.1.2',
+204 silly addNameRange     '0.1.3',
+204 silly addNameRange     '0.1.4',
+204 silly addNameRange     '0.1.5',
+204 silly addNameRange     '0.1.6',
+204 silly addNameRange     '0.1.7',
+204 silly addNameRange     '0.1.8',
+204 silly addNameRange     '0.1.9',
+204 silly addNameRange     '0.1.10',
+204 silly addNameRange     '0.1.11',
+204 silly addNameRange     '0.1.12',
+204 silly addNameRange     '0.1.13',
+204 silly addNameRange     '0.1.14',
+204 silly addNameRange     '0.1.15',
+204 silly addNameRange     '0.1.16',
+204 silly addNameRange     '0.1.17',
+204 silly addNameRange     '0.1.18',
+204 silly addNameRange     '0.1.19',
+204 silly addNameRange     '0.1.20',
+204 silly addNameRange     '0.1.21',
+204 silly addNameRange     '0.1.22',
+204 silly addNameRange     '0.2.0',
+204 silly addNameRange     '0.2.1',
+204 silly addNameRange     '0.2.2',
+204 silly addNameRange     '0.2.3',
+204 silly addNameRange     '0.2.4',
+204 silly addNameRange     '0.2.5',
+204 silly addNameRange     '0.2.6',
+204 silly addNameRange     '0.2.7',
+204 silly addNameRange     '0.2.8',
+204 silly addNameRange     '0.2.9',
+204 silly addNameRange     '0.2.10',
+204 silly addNameRange     '0.3.0',
+204 silly addNameRange     '0.4.0',
+204 silly addNameRange     '0.4.1',
+204 silly addNameRange     '0.5.0',
+204 silly addNameRange     '0.6.0',
+204 silly addNameRange     '0.6.1',
+204 silly addNameRange     '0.6.2',
+204 silly addNameRange     '0.7.0',
+204 silly addNameRange     '0.8.0',
+204 silly addNameRange     '0.9.0',
+204 silly addNameRange     '0.9.2',
+204 silly addNameRange     '1.0.0',
+204 silly addNameRange     '1.1.0',
+204 silly addNameRange     '1.2.0',
+204 silly addNameRange     '1.1.1',
+204 silly addNameRange     '1.2.1',
+204 silly addNameRange     '1.3.0',
+204 silly addNameRange     '1.4.0',
+204 silly addNameRange     '1.4.1',
+204 silly addNameRange     '1.4.2',
+204 silly addNameRange     '1.5.0',
+204 silly addNameRange     '1.5.1',
+204 silly addNameRange     '1.5.2',
+204 silly addNameRange     '2.0.0-alpha.0',
+204 silly addNameRange     '2.0.0-rc.1',
+204 silly addNameRange     '2.0.0-rc.2',
+204 silly addNameRange     '2.0.0-rc.3',
+204 silly addNameRange     '2.0.0-rc.4',
+204 silly addNameRange     '2.0.0-rc.5',
+204 silly addNameRange     '2.0.0-rc.6',
+204 silly addNameRange     '2.0.0',
+204 silly addNameRange     '2.0.1',
+204 silly addNameRange     '2.1.0',
+204 silly addNameRange     '2.1.1',
+204 silly addNameRange     '2.1.2' ] ]
+205 silly addNamed async@0.9.2
+206 verbose addNamed "0.9.2" is a plain semver version for async
+207 silly cache afterAdd async@0.9.2
+208 verbose afterAdd /Users/chloecollier/.npm/async/0.9.2/package/package.json not in flight; writing
+209 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+210 verbose afterAdd /Users/chloecollier/.npm/async/0.9.2/package/package.json written
+211 http 200 https://registry.npmjs.org/safejson
+212 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+212 verbose headers   etag: '"670QJKMF2LXSCWGSWQU0UNH1O"',
+212 verbose headers   'content-type': 'application/json',
+212 verbose headers   'content-encoding': 'gzip',
+212 verbose headers   'cache-control': 'max-age=300',
+212 verbose headers   'content-length': '2487',
+212 verbose headers   'accept-ranges': 'bytes',
+212 verbose headers   date: 'Wed, 02 Nov 2016 21:19:25 GMT',
+212 verbose headers   via: '1.1 varnish',
+212 verbose headers   age: '0',
+212 verbose headers   connection: 'keep-alive',
+212 verbose headers   'x-served-by': 'cache-iad2648-IAD',
+212 verbose headers   'x-cache': 'HIT',
+212 verbose headers   'x-cache-hits': '1',
+212 verbose headers   'x-timer': 'S1478121565.001989,VS0,VE105',
+212 verbose headers   vary: 'Accept-Encoding' }
+213 silly get cb [ 200,
+213 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+213 silly get     etag: '"670QJKMF2LXSCWGSWQU0UNH1O"',
+213 silly get     'content-type': 'application/json',
+213 silly get     'content-encoding': 'gzip',
+213 silly get     'cache-control': 'max-age=300',
+213 silly get     'content-length': '2487',
+213 silly get     'accept-ranges': 'bytes',
+213 silly get     date: 'Wed, 02 Nov 2016 21:19:25 GMT',
+213 silly get     via: '1.1 varnish',
+213 silly get     age: '0',
+213 silly get     connection: 'keep-alive',
+213 silly get     'x-served-by': 'cache-iad2648-IAD',
+213 silly get     'x-cache': 'HIT',
+213 silly get     'x-cache-hits': '1',
+213 silly get     'x-timer': 'S1478121565.001989,VS0,VE105',
+213 silly get     vary: 'Accept-Encoding' } ]
+214 verbose get saving safejson to /Users/chloecollier/.npm/registry.npmjs.org/safejson/.cache.json
+215 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+216 silly resolveWithNewModule safejson@1.0.1 checking installable status
+217 silly cache add args [ 'safejson@~1.0.0', null ]
+218 verbose cache add spec safejson@~1.0.0
+219 silly cache add parsed spec Result {
+219 silly cache add   raw: 'safejson@~1.0.0',
+219 silly cache add   scope: null,
+219 silly cache add   escapedName: 'safejson',
+219 silly cache add   name: 'safejson',
+219 silly cache add   rawSpec: '~1.0.0',
+219 silly cache add   spec: '>=1.0.0 <1.1.0',
+219 silly cache add   type: 'range' }
+220 silly addNamed safejson@>=1.0.0 <1.1.0
+221 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for safejson
+222 silly addNameRange { name: 'safejson', range: '>=1.0.0 <1.1.0', hasData: false }
+223 silly mapToRegistry name safejson
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'safejson',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   escapedName: 'safejson',
+226 silly mapToRegistry   name: 'safejson',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npmjs.org/safejson
+228 verbose addNameRange registry:https://registry.npmjs.org/safejson not in flight; fetching
+229 verbose get https://registry.npmjs.org/safejson not expired, no request
+230 silly addNameRange number 2 { name: 'safejson', range: '>=1.0.0 <1.1.0', hasData: true }
+231 silly addNameRange versions [ 'safejson',
+231 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.3', '0.0.4', '1.0.0', '1.0.1' ] ]
+232 silly addNamed safejson@1.0.1
+233 verbose addNamed "1.0.1" is a plain semver version for safejson
+234 silly mapToRegistry name safejson
+235 silly mapToRegistry using default registry
+236 silly mapToRegistry registry https://registry.npmjs.org/
+237 silly mapToRegistry data Result {
+237 silly mapToRegistry   raw: 'safejson',
+237 silly mapToRegistry   scope: null,
+237 silly mapToRegistry   escapedName: 'safejson',
+237 silly mapToRegistry   name: 'safejson',
+237 silly mapToRegistry   rawSpec: '',
+237 silly mapToRegistry   spec: 'latest',
+237 silly mapToRegistry   type: 'tag' }
+238 silly mapToRegistry uri https://registry.npmjs.org/safejson
+239 verbose addRemoteTarball https://registry.npmjs.org/safejson/-/safejson-1.0.1.tgz not in flight; adding
+240 verbose addRemoteTarball [ 'https://registry.npmjs.org/safejson/-/safejson-1.0.1.tgz',
+240 verbose addRemoteTarball   '5bcbb9533b96fce10e6356f420017c16a4f9c998' ]
+241 info retry fetch attempt 1 at 5:19:25 PM
+242 info attempt registry request try #1 at 5:19:25 PM
+243 http fetch GET https://registry.npmjs.org/safejson/-/safejson-1.0.1.tgz
+244 http fetch 200 https://registry.npmjs.org/safejson/-/safejson-1.0.1.tgz
+245 silly fetchAndShaCheck shasum 5bcbb9533b96fce10e6356f420017c16a4f9c998
+246 verbose addTmpTarball /var/folders/st/83x2x7xn0_11dfv96zl0k40h0000gn/T/npm-7691-9cc662b6/registry.npmjs.org/safejson/-/safejson-1.0.1.tgz not in flight; adding
+247 verbose addTmpTarball already have metadata; skipping unpack for safejson@1.0.1
+248 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+249 silly cache afterAdd safejson@1.0.1
+250 verbose afterAdd /Users/chloecollier/.npm/safejson/1.0.1/package/package.json not in flight; writing
+251 verbose correctMkdir /Users/chloecollier/.npm correctMkdir not in flight; initializing
+252 verbose afterAdd /Users/chloecollier/.npm/safejson/1.0.1/package/package.json written
+253 silly loadAllDepsIntoIdealTree Finishing
+254 silly loadIdealTree Finishing
+255 silly currentTree updatedGroupProject
+255 silly currentTree └── angular@1.5.8
+256 silly idealTree updatedGroupProject
+256 silly idealTree ├── angular-ui-router@0.3.1
+256 silly idealTree ├── angular@1.5.8
+256 silly idealTree ├── async@0.9.2
+256 silly idealTree ├── browser-ls@1.4.0
+256 silly idealTree ├── ng-local-storage@0.1.0
+256 silly idealTree └── safejson@1.0.1
+257 silly generateActionsToTake Starting
+258 silly install generateActionsToTake
+259 warn checkPermissions Missing write access to /Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules
+260 silly rollbackFailedOptional Starting
+261 silly rollbackFailedOptional Finishing
+262 silly runTopLevelLifecycles Starting
+263 silly runTopLevelLifecycles Finishing
+264 silly install printInstalled
+265 warn updatedGroupProject No repository field.
+266 warn updatedGroupProject No license field.
+267 verbose stack Error: EACCES: permission denied, access '/Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules'
+267 verbose stack     at Error (native)
+268 verbose cwd /Users/chloecollier/Documents/Assignments/updatedGroupProject
+269 error Darwin 14.5.0
+270 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+271 error node v6.7.0
+272 error npm  v3.10.3
+273 error path /Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules
+274 error code EACCES
+275 error errno -13
+276 error syscall access
+277 error Error: EACCES: permission denied, access '/Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules'
+277 error     at Error (native)
+277 error  { Error: EACCES: permission denied, access '/Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules'
+277 error     at Error (native)
+277 error   errno: -13,
+277 error   code: 'EACCES',
+277 error   syscall: 'access',
+277 error   path: '/Users/chloecollier/Documents/Assignments/updatedGroupProject/node_modules' }
+278 error Please try running this command again as root/Administrator.
+279 verbose exit [ -13, true ]
