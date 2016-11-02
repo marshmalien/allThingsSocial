@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-ui-router": "^0.3.1",
-    "ng-local-storage": "^0.1.0"
+    "angular-local-storage": "^0.5.0",
+    "angular-ui-router": "^0.3.1"
   }
 }
