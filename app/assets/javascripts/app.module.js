@@ -11,4 +11,5 @@
     abstract: true,
     template: '<ui-view></ui-view>'
   });
+});
 })();

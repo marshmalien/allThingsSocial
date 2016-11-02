@@ -1,6 +1,6 @@
 // Vendored assets
 //= require angular/angular.js
-//= require angular-local-storage/dist/angular-local-storage.js
+
 //= require angular-ui-router/release/angular-ui-router.js
 
 // Application assets
