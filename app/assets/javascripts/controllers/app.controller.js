@@ -5,10 +5,12 @@
     .module('app')
     .controller('AppController', AppController);
 
-  function AppController() {
-    var vm = this;
+  AppController.$inject = ['$http'];
 
-    vm.sayHello = sayHello;
+  function AppController($http) {
+    var self = this;
+
+    self.sayHello = sayHello;
 
     function sayHello() {
       return 'Hello, World!';
