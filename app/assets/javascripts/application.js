@@ -5,4 +5,5 @@
 
 // Application assets
 //= require app.module.js
-//= require app.controller.js
+//= require_tree ./controllers
+//= require_tree ./services
