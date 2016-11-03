@@ -1,0 +1,19 @@
+nav {
+  height: 30px;
+  width: 100vw;
+  background: $mediumBlue;
+  display: flex;
+  flex-direction: row;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    margin-left: auto;
+    li {
+    list-style: none;
+    color: white;
+    }
+  }
+}

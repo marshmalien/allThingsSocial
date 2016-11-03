@@ -13,8 +13,14 @@
   </head>
 
   <body ng-app='app' ng-controller='AppController as vm'>
-    <div>
-      {{vm.sayHello()}}
-    </div>
+    <nav>
+      <ul>
+        <li ui-sref="home">Home</li>
+        <li ui-sref="profile">Profile</li>
+      </ul>
+    </nav>
+
+    <ui-view></ui-view>
+
   </body>
 </html>
