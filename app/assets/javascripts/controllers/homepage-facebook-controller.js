@@ -4,7 +4,7 @@ angular.module('app')
     {name: 'stepOne', arrow: 'right', description: 'This posts directly to your profile, not to someone elses.'},
     {name: 'stepTwo', arrow: 'right', description: 'This is the share button. For your kids sake, you will be limited on shares.'},
     {name: 'stepThree', arrow: 'right', description: 'This is your messaging center. Only message people if needed.'},
-    {name: 'stepComplete', arrow: 'null', description: 'You made it through the tutorial. Are you ready for the quiz?'}
+    {name: 'stepComplete', arrow: null, description: 'You made it through the tutorial. Are you ready for the quiz?'}
   ]
 
   setTimeout(function(){

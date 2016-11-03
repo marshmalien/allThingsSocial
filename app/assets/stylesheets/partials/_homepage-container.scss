@@ -36,6 +36,7 @@ body {
           margin-top: 0;
           color: #fff;
           font-weight: 100;
+          line-height: 28px;
         }
 
         button {
@@ -107,6 +108,10 @@ body {
       width: 550px;
       font-size: 40px;
       padding: 30px 40px;
+
+      p {
+        line-height: 45px !important;
+      }
 
       .completeBtn {
         display: inline-block;
