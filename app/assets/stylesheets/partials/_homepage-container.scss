@@ -1,0 +1,132 @@
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+
+  .homepage-container {
+    background: url(/assets/homepageFb.png) no-repeat;
+    background-size: cover;
+    height: 675px;
+
+    section {
+      width: 260px;
+      padding: 15px 12px;
+      position: absolute;
+      background: #FC790B;
+      border-radius: 8px;
+      font-size: 19px;
+      box-shadow: #6A3406 0px 1px 4px 0;
+      display: none;
+
+      .step-container {
+        position: relative;
+
+        h1 {
+          font-size: 55px;
+          margin: 10px;
+          text-align: center;
+          color: #fff;
+        }
+
+        img {
+          width: 60px;
+          position: absolute;
+        }
+
+        p {
+          margin-top: 0;
+          color: #fff;
+          font-weight: 100;
+        }
+
+        button {
+          margin: 0 auto;
+          display: block;
+          font-size: 22px;
+          color: #0186DA;
+          border: transparent;
+          background: #fff;
+          border-radius: 5px;
+          padding: 8px;
+          cursor: pointer;
+          outline: none;
+        }
+
+        .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 20px solid #FC790B;
+          position: absolute;
+        }
+      }
+    }
+
+    .stepOne {
+      top: 148px;
+      left: 15px;
+
+      img {
+        bottom: -75px;
+        left: 100px;
+      }
+
+      .arrow-right {
+        right: -31px;
+        top: 30px;
+      }
+    }
+
+    .stepTwo {
+      top: 330px;
+      left: 15px;
+
+      img {
+        bottom: -75px;
+        left: 100px;
+        // @include animation(upAndDown .5s 1);
+      }
+
+      .arrow-right {
+        right: -31px;
+        top: 8px;
+      }
+    }
+
+    .stepThree {
+      right: 85px;
+      bottom: 0;
+    }
+
+    .stepComplete {
+      margin-left: auto;
+      margin-right: auto;
+      top: 190px;
+      left: 0;
+      right: 0;
+      width: 550px;
+      font-size: 40px;
+      padding: 30px 40px;
+
+      .completeBtn {
+        display: inline-block;
+        font-size: 28px;
+        color: #fff;
+
+        &:first-child {
+          margin-right: 55px;
+          background: #FC4A17;
+        }
+
+        &:last-child {
+          background: #1DC985;
+        }
+      }
+
+      .buttons {
+        margin: 0 auto;
+        display: table;
+      }
+    }
+  }
+}

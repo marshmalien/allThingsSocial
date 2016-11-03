@@ -6,7 +6,8 @@
 
       $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'home.html'
+        templateUrl: 'home.html',
+        controller: 'homepageController as homepage'
       }).state('profile', {
         templateUrl: 'profile.html'
       });

@@ -1,1 +1,15 @@
-<h1>I am the home page</h1>
+<div class="homepage-container">
+  <section ng-repeat="step in homepage.instructionSteps" class="{{step.name}}">
+    <div class="step-container">
+      <h1 ng-if="step.name === 'stepComplete'">Yay!</h1>
+      <p>{{step.description}}</p>
+      <button ng-hide="step.name === 'stepComplete'" ng-click="homepage.buttonClick(step.name)">Gotcha</button>
+      <div class="buttons" ng-if="step.name === 'stepComplete'">
+        <button class="completeBtn" type="button">Nope, need a recap.</button>
+        <button class="completeBtn" type="button">Yes, I am ready!</button>
+      </div>
+      <img src="/assets/step-triangle.svg" alt="triangle">
+      <div class="arrow-{{step.arrow}}"></div>
+    </div>
+  </section>
+</div>
