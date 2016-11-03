@@ -5,14 +5,8 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http', '$location'];
+  AppController.$inject = ['$http'];
 
-  function AppController($http, $location) {
-
-    this.scrollTo = function(id) {
-      document.getElementById(id).scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
+  function AppController($http) {
   };
 })();

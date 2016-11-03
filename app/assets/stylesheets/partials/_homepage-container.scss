@@ -1,20 +1,12 @@
-div.child-fb {
-  width: 100vw;
-  height: 100vh;
-  &#child-one {
-    background: url(molly_fb.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  &#child-two {
-    background: url(molly_fb2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
 body {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+
+  .homepage-container {
+    background: url(/assets/homepageFb.png) no-repeat;
+    background-size: cover;
+    height: 675px;
+
     section {
       width: 260px;
       padding: 15px 12px;
@@ -72,8 +64,8 @@ body {
     }
 
     .stepOne {
-      top: 62vh;
-      left: 76vw;
+      top: 148px;
+      left: 15px;
 
       img {
         bottom: -75px;
@@ -87,8 +79,8 @@ body {
     }
 
     .stepTwo {
-      top: 40vh;
-      left: 74vw;
+      top: 330px;
+      left: 15px;
 
       img {
         bottom: -75px;
@@ -139,7 +131,7 @@ body {
       .buttons {
         margin: 0 auto;
         display: table;
-
+      }
     }
   }
 }
