@@ -1,0 +1,52 @@
+nav {
+  align-items: center;
+  background: $mediumBlue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 26px;
+  font-style: 'Helvetica', sans-serif;
+  font-weight: bold;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 2%;
+
+  h5 {
+    flex-grow: 1;
+    position: relative;
+  }
+  div {
+    &.logo {
+      background-image: url(Logo.svg);
+      height: 60px;
+      width: 100px;
+    }
+    &.triangle {
+      position: absolute;
+      background-image: url(Triangle.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 27px;
+      width: 40px;
+      left: 8%;
+    }
+  }
+  ul {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 10%;
+    li {
+    position: relative;
+    list-style: none;
+    margin: 0 2%;
+      div.triangle {
+        top: 26px;
+        left: 25%;
+      }
+    }
+  }
+}

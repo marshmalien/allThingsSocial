@@ -22,11 +22,13 @@
 21 silly currentTree updatedGroupProject
 21 silly currentTree ├── angular-local-storage@0.5.0
 21 silly currentTree ├── angular-ui-router@0.3.1
-21 silly currentTree └── angular@1.5.8
+21 silly currentTree ├── angular@1.5.8
+21 silly currentTree └── normalize.css@5.0.0
 22 silly idealTree updatedGroupProject
 22 silly idealTree ├── angular-local-storage@0.5.0
 22 silly idealTree ├── angular-ui-router@0.3.1
-22 silly idealTree └── angular@1.5.8
+22 silly idealTree ├── angular@1.5.8
+22 silly idealTree └── normalize.css@5.0.0
 23 silly generateActionsToTake Starting
 24 silly install generateActionsToTake
 25 silly generateActionsToTake Finishing

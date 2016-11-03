@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="58px" viewBox="0 0 100 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Portrait" transform="translate(-640.000000, -1.000000)">
+            <g id="Logo" transform="translate(640.000000, 0.000000)">
+                <rect id="Rectangle-5" fill="#1BA7FF" x="0" y="1" width="100" height="16.7938262"></rect>
+                <rect id="Rectangle-5" fill="#1BA7FF" x="0" y="41.58508" width="100" height="16.7938262"></rect>
+                <text id="CHILD" font-family="AvenirNextCondensed-Medium, Avenir Next Condensed" font-size="14" font-style="condensed" font-weight="400" letter-spacing="14.3999996" fill="#FFFFFF">
+                    <tspan x="5" y="14">CHIL</tspan>
+                    <tspan x="86.2319985" y="14">D</tspan>
+                </text>
+                <text id="EXPLICIT-CONTENT" font-family="AvenirNextCondensed-Regular, Avenir Next Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="5" y="55">EXPLICIT CONTENT</tspan>
+                </text>
+                <text id="ADVISORY" font-family="AvenirNextCondensed-Bold, Avenir Next Condensed" font-size="20" font-style="condensed" font-weight="bold" letter-spacing="1.13999999" fill="#FFFFFF">
+                    <tspan x="5" y="37">ADVISOR</tspan>
+                    <tspan x="84.5799999" y="37">Y</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
