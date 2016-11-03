@@ -1,1 +1,10 @@
-<h1>Welcome!</h1>
+<div class="homepage-container" ng-controller="homepageController as homepage">
+  <section ng-repeat="step in homepage.instructionSteps" class="{{step.name}}">
+    <div class="step-container">
+      <p>{{step.description}}</p>
+      <button ng-click="homepage.buttonClick(step.name)">Gotcha</button>
+      <img src="/assets/triangle.svg" alt="triangle">
+      <div class="arrow-{{step.arrow}}"></div>
+    </div>
+  </section>
+</div>

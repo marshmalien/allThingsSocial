@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('app', [])
     .controller('AppController', AppController);
 
   AppController.$inject = ['$http'];
