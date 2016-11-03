@@ -1,14 +1,14 @@
 (function() {
   'use strict';
 
-  angular.module('app', ['ui.router', 'LocalStorageModule'])
+  angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
     .config(function($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/');
 
-      $stateProvider.state('main', {
+      $stateProvider.state('home', {
         url: '/',
-        abstract: true,
-        template: '<ui-view></ui-view>'
+        templateUrl: 'home.html'
+      }).state('profile', {
+        templateUrl: 'profile.html'
       });
     });
 })();
