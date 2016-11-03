@@ -1,7 +1,14 @@
 div.child-fb {
-  background: url(molly_fb.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  &#child-one {
+    background: url(molly_fb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &#child-two {
+    background: url(molly_fb2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
