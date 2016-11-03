@@ -1,3 +1,10 @@
 $lightBlue: #46C2F1;
 $mediumBlue: #0186DA;
 $darkBlue: #39579A;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

@@ -10,5 +10,5 @@
       }).state('profile', {
         templateUrl: 'profile.html'
       });
-    });
+    })
 })();

@@ -5,15 +5,14 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http'];
+  AppController.$inject = ['$http', '$location'];
 
-  function AppController($http) {
-    var self = this;
+  function AppController($http, $location) {
 
-    self.sayHello = sayHello;
-
-    function sayHello() {
-      return 'Hello, World!';
+    this.scrollTo = function(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+      })
     }
   };
 })();
