@@ -1,12 +1,14 @@
 <div class="quiz-container">
-  <section>
-    <h3>1.</h3>
-    <p>What?</p>
+  <section ng-repeat="item in quizOne.quizOneQuestions">
+    <div class="question">
+      <h3>{{item.number}}</h3>
+      <p>{{item.question}}</p>
+    </div>
     <div class="options">
-      <div><button type="button">A</button>Option 1</div>
-      <div><button type="button">B</button>Option 2</div>
-      <div><button type="button">C</button>Option 3</div>
-      <div><button type="button">D</button>Option 4</div>
+      <div ng-repeat="(key, value) in item.options">
+        <button ng-click="quizOne.checkAnswer(key, item.answer)" type="button">{{key}}</button>{{value}}
+      </div>
     </div>
   </section>
+  <button class="submit-button" ng-click="quizOne.submitAnswers()" type="button">Submit!</button>
 </div>
