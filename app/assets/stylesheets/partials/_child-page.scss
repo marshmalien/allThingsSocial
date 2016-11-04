@@ -68,6 +68,22 @@ body {
           border-left: 20px solid #FC790B;
           position: absolute;
         }
+        .arrow-left {
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right: 20px solid #FC790B;
+          position: absolute;
+        }
+        .arrow-down {
+          width: 0;
+          height: 0;
+          border-top: 20px solid #FC790B;
+          border-right: 20px solid transparent;
+          border-left: 20px solid transparent;
+          position: absolute;
+        }
       }
     }
 
@@ -80,15 +96,15 @@ body {
         left: 100px;
       }
 
-      .arrow-right {
-        right: -31px;
-        top: 30px;
+      .arrow-left {
+        right: 248px;
+        top: 136px;
       }
     }
 
     .stepTwo {
-      top: 40vh;
-      left: 74vw;
+      top: 33vh;
+      left: 75vw;
 
       img {
         bottom: -75px;
@@ -96,15 +112,25 @@ body {
         // @include animation(upAndDown .5s 1);
       }
 
-      .arrow-right {
-        right: -31px;
-        top: 8px;
+      .arrow-left {
+        right: 247px;
+        top: 46px;
       }
     }
 
     .stepThree {
-      right: 85px;
-      bottom: 0;
+      left: 62vw;
+      top: 18vh;
+
+      .arrow-down {
+        bottom: -35px;
+        left: 96px;
+      }
+
+      img {
+        top: 166px;
+        right: -16px;
+      }
     }
 
     .stepComplete {
