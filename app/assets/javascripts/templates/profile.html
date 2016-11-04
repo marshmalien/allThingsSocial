@@ -1,1 +1,19 @@
-<h1>I am the profile childish page</h1>
+<!-- <div class="child-fb" id="child-one" ng-click="vm.scrollTo('child-two')"></div>
+<div class="child-fb" id="child-two" ng-click="vm.scrollTo('child-one')"></div> -->
+<div class="child-fb" id="child-one">
+  <section ng-repeat="step in childpage.instructionSteps" class="{{step.name}}">
+    <div class="step-container">
+      <h1 ng-if="step.name === 'stepComplete'">Yay!</h1>
+      <p>{{step.description}}</p>
+      <button ng-hide="step.name === 'stepComplete'" ng-click="childpage.buttonClick(step.name)">Gotcha</button>
+      <div class="buttons" ng-if="step.name === 'stepComplete'">
+        <button ui-sref="parent.profile" ui-sref-opts="{reload:true}" class="completeBtn" type="button">Nope, need a recap.</button>
+        <button ui-sref="parent.quiz({id: 2})" class="completeBtn" type="button">Yes, I am ready!</button>
+      </div>
+      <img ng-hide="step.name === 'stepComplete'"
+      ng-src="{{step.name === 'stepThree' ? '/assets/left-step-triangle.png' : '/assets/step-triangle.svg'}}"
+      alt="triangle">
+      <div class="arrow-{{step.arrow}}"></div>
+    </div>
+  </section>
+</div>
