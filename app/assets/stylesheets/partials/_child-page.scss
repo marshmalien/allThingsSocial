@@ -88,39 +88,41 @@ body {
     }
 
     .stepOne {
-      top: 62vh;
-      left: 76vw;
+      top: 46%;
+      left: 80%;
+      width: 220px;
 
       img {
-        bottom: -75px;
-        left: 100px;
+        right: 66px;
+        top: 240px;
       }
 
       .arrow-left {
-        right: 248px;
-        top: 136px;
+        right: 207px;
+        top: 176px;
       }
     }
 
     .stepTwo {
-      top: 33vh;
-      left: 75vw;
+      top: 33%;
+      left: 79%;
+      width: 200px;
 
       img {
         bottom: -75px;
-        left: 100px;
+        left: 60px;
         // @include animation(upAndDown .5s 1);
       }
 
       .arrow-left {
-        right: 247px;
-        top: 46px;
+        right: 187px;
+        top: 60px;
       }
     }
 
     .stepThree {
-      left: 62vw;
-      top: 18vh;
+      left: 61%;
+      top: 8%;
 
       .arrow-down {
         bottom: -35px;
@@ -128,15 +130,15 @@ body {
       }
 
       img {
-        top: 166px;
-        right: -16px;
+        top: 40px;
+        right: -74px;
       }
     }
 
     .stepComplete {
       margin-left: auto;
       margin-right: auto;
-      top: 190px;
+      top: 20%;
       left: 0;
       right: 0;
       width: 550px;

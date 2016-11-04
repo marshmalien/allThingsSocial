@@ -10,7 +10,9 @@
         <button ui-sref="parent.profile" ui-sref-opts="{reload:true}" class="completeBtn" type="button">Nope, need a recap.</button>
         <button ui-sref="parent.quizOne" class="completeBtn" type="button">Yes, I am ready!</button>
       </div>
-      <img ng-hide="step.name === 'stepComplete'" src="/assets/step-triangle.svg" alt="triangle">
+      <img ng-hide="step.name === 'stepComplete'"
+      ng-src="{{step.name === 'stepThree' ? '/assets/left-step-triangle.png' : '/assets/step-triangle.svg'}}"
+      alt="triangle">
       <div class="arrow-{{step.arrow}}"></div>
     </div>
   </section>
