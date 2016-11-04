@@ -18,11 +18,12 @@
       <div class='logo'></div>
       <ul>
           <li ui-sref="parent.home">Home  <div class='triangle'></div></li>
-          <li ui-sref="parent.profile">Profile  <div class='triangle'></div></li>
+          <li ui-sref="parent.child">Profile  <div class='triangle'></div></li>
       </ul>
     </nav>
-
-    <ui-view></ui-view>
+    <main class="uiView">
+      <ui-view></ui-view>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
 </html>

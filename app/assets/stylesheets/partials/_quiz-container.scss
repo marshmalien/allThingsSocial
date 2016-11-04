@@ -1,5 +1,14 @@
 .quiz-container {
 
+  #quizMessage {
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+  }
+
   section {
     margin: 0 auto;
     width: 515px;
@@ -23,7 +32,7 @@
       }
 
       p {
-        font-size: 23px;
+        font-size: 22px;
         width: 450px;
         padding-left: 15px;
         line-height: 31px;
@@ -50,7 +59,7 @@
           border: #fff solid 2px;
         }
 
-        &:active, &:focus {
+        &.selected {
           background: #FC790B;
           color: #fff;
           border: #FCA257 solid 2px;

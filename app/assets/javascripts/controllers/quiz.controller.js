@@ -1,5 +1,6 @@
 angular.module('app')
-.controller('quizController', function($stateParams) {
+.controller('quizController', function($stateParams, $location, $anchorScroll) {
+
   var self = this;
   this.quizOneQuestions = [
     {
@@ -115,17 +116,28 @@ angular.module('app')
   this.submitAnswers = function() {
     var rightAnwers = 0;
     for(var i = 0; i < self.answerArray.length; i++) {
-      console.log('in');
       if(self.answerArray[i].userInput === self.answerArray[i].answer) {
         rightAnwers++;
       }
     }
     if(rightAnwers < self.answerArray.length) {
-      $('<h4>Sorry! You did not pass. You got ' + rightAnwers + ' out of ' + self.answerArray.length + '</h4>').appendTo('.quiz-container');
-      $('.quiz-container h4').scrollTo( '100%' );
+      $('<h4>').attr('id', 'quizMessage')
+        .html('Sorry! You did not pass. You got ' + rightAnwers + ' out of ' + self.answerArray.length)
+        .appendTo('.quiz-container')
+        .css('background', '#BE4824')
+      $('<button>').attr('type', 'button')
+        .html('Try Again').appendTo('#quizMessage');
     } else {
-      $('<h4>Awesome! You passed. You got ' + rightAnwers + ' out of ' + self.answerArray.length + '</h4>').appendTo('.quiz-container')
+      $('<h4>').attr('id', 'quizMessage').html('Awesome! You passed. You got ' + rightAnwers + ' out of ' + self.answerArray.length)
+        .appendTo('.quiz-container')
+        .css('background', '#1DC985')
+      $('<button>').attr({'type': 'button', 'ui-sref': "parent.child"})
+        .html('Take me to Tutorial 2')
+        .appendTo('#quizMessage');
     }
+
+    $location.hash('quizMessage');
+    $anchorScroll();
   }
 
 });

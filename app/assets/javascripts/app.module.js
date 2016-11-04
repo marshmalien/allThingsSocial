@@ -16,9 +16,9 @@
         url: 'quiz/:id',
         templateUrl: 'quiz.html',
         controller: 'quizController as quiz'
-      }).state('parent.profile', {
-        url: 'profile',
-        templateUrl: 'profile.html',
+      }).state('parent.child', {
+        url: 'child',
+        templateUrl: 'child.html',
         controller: 'childpageController as childpage'
       })
     })
