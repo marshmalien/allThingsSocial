@@ -1,10 +1,10 @@
 angular.module('app')
 .controller('homepageController', function() {
   this.instructionSteps = [
-    {name: 'stepOne', arrow: 'right', description: 'This posts directly to your profile, not to someone elses.'},
-    {name: 'stepTwo', arrow: 'right', description: 'This is the share button. For your kids sake, you will be limited on shares.'},
-    {name: 'stepThree', arrow: 'right', description: 'This is your messaging center. Only message people if needed.'},
-    {name: 'stepComplete', arrow: null, description: 'You made it through the tutorial. Are you ready for the quiz?'}
+    {name: 'stepOne', triangle: 'right', description: 'This posts directly to your profile, not to someone elses.'},
+    {name: 'stepTwo', triangle: 'right', description: 'This is the share button. For your kids sake, you will be limited on shares.'},
+    {name: 'stepThree', triangle: 'right', description: 'This is your messaging center. Only message people if needed.'},
+    {name: 'stepComplete', triangle: null, description: 'You made it through the tutorial. Are you ready for the quiz?'}
   ]
 
   setTimeout(function(){
@@ -18,10 +18,17 @@ angular.module('app')
     } else if(step === 'stepTwo') {
       $('.stepTwo').fadeOut(500);
       $('.stepThree').fadeIn(500);
+      $('html, body').animate({
+        scrollTop: $(document).height()
+      }, 2000);
     } else if(step === 'stepThree') {
       $('.stepThree').fadeOut(500);
       $('.stepComplete').fadeIn(500);
     }
   }
+
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1500);
 
 });

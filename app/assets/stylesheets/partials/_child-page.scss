@@ -55,7 +55,7 @@ body {
           outline: none;
         }
 
-        .arrow-right {
+        .triangle-right {
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
@@ -63,7 +63,7 @@ body {
           border-left: 20px solid #FC790B;
           position: absolute;
         }
-        .arrow-left {
+        .triangle-left {
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
@@ -71,7 +71,7 @@ body {
           border-right: 20px solid #FC790B;
           position: absolute;
         }
-        .arrow-down {
+        .triangle-down {
           width: 0;
           height: 0;
           border-top: 20px solid #FC790B;
@@ -92,7 +92,7 @@ body {
         top: 240px;
       }
 
-      .arrow-left {
+      .triangle-left {
         right: 207px;
         top: 176px;
       }
@@ -109,7 +109,7 @@ body {
         // @include animation(upAndDown .5s 1);
       }
 
-      .arrow-left {
+      .triangle-left {
         right: 187px;
         top: 60px;
       }
@@ -119,7 +119,7 @@ body {
       right: 221px;
       top: 160px;
 
-      .arrow-down {
+      .triangle-down {
         bottom: -35px;
         left: 96px;
       }

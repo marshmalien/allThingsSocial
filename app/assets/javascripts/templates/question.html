@@ -1,0 +1,13 @@
+<h2 ng-class="{'correct-response': qVM.isCorrect, 'incorrect-response': !qVM.isCorrect}">{{qVM.answerResponse}}</h2>
+
+<section>
+  <div class="question">
+    <h3>{{qVM.question.number}}</h3>
+    <p>{{qVM.question.question}}</p>
+  </div>
+  <div class="options">
+    <div ng-repeat="(key, value) in qVM.question.options">
+      <button ng-disabled='qVM.answered' ng-click="qVM.nextQuestion(key)" type="button">{{key}}</button>{{value}}
+    </div>
+  </div>
+</section>
