@@ -5,8 +5,9 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http'];
+  AppController.$inject = ['$http', '$scope'];
 
-  function AppController($http) {
+  function AppController($http, $scope) {
+    $scope.stepInTutorial = "0";
   };
 })();

@@ -157,10 +157,8 @@ angular.module('app')
     }
   }
 
-
   this.goToNextState = function() {
     $state.go(this.nextState)
   }
-
 
 });

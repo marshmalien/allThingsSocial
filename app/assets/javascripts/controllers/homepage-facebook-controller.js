@@ -1,5 +1,7 @@
 angular.module('app')
-.controller('homepageController', function() {
+.controller('homepageController', function($scope) {
+  $scope.$parent.stepInTutorial = "1";
+
   this.instructionSteps = [
     {name: 'stepOne', triangle: 'right', description: 'This posts directly to your profile, not to someone elses.'},
     {name: 'stepTwo', triangle: 'right', description: 'This is the share button. For your kids sake, you will be limited on shares.'},
