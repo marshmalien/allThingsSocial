@@ -106,12 +106,6 @@ angular.module('app')
     return this.questions[$stateParams.id]
   }
 
-  this.checkAnswer = function(key, answer) {
-    self.answerArray.push({
-      userInput: key,
-      answer: answer
-    })
-  }
   /*****************************************
   Toggling multi-choice answers (for each question)
   *****************************************/
@@ -121,25 +115,26 @@ angular.module('app')
   }
   /*****************************************
   Checks for right answers
-  1) if anwser is right, rightAnwers will increment by 1
+  1) if anwser is right, rightAnswers will increment by 1
   2) message will then be displayed
   *****************************************/
   this.submitAnswers = function() {
-    var rightAnwers = 0;
+    var rightAnswers = 0;
     for(var i = 0; i < self.answerArray.length; i++) {
       if(self.answerArray[i].userInput === self.answerArray[i].answer) {
-        rightAnwers++;
+        rightAnswers++;
       }
     }
-    if(rightAnwers < self.answerArray.length) {
+    console.log(rightAnswers);
+    if(rightAnswers < self.answerArray.length) {
       $('<h4>').attr('id', 'quizMessage')
-        .html('Sorry! You did not pass. You got ' + rightAnwers + ' out of ' + self.answerArray.length)
+        .html('Sorry! You did not pass. You got ' + rightAnswers + ' out of ' + self.answerArray.length)
         .appendTo('.quiz-container')
         .css('background', '#BE4824')
       $('<button>').attr('type', 'button')
         .html('Try Again').appendTo('#quizMessage');
     } else {
-      $('<h4>').attr('id', 'quizMessage').html('Awesome! You passed. You got ' + rightAnwers + ' out of ' + self.answerArray.length)
+      $('<h4>').attr('id', 'quizMessage').html('Awesome! You passed. You got ' + rightAnswers + ' out of ' + self.answerArray.length)
         .appendTo('.quiz-container')
         .css('background', '#1DC985')
       $('<button>').attr({'type': 'button', 'ui-sref': "child"})

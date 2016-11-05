@@ -1,11 +1,13 @@
+<h2 ng-hide>Bummer!</h2>
+<h2 ng-hide>Correct!</h2>
 <section>
   <div class="question">
-    <h3>{{question.question.number}}</h3>
-    <p>{{question.question.question}}</p>
+    <h3>{{qVM.question.number}}</h3>
+    <p>{{qVM.question.question}}</p>
   </div>
   <div class="options">
-    <div ng-repeat="(key, value) in question.question.options">
-      <button ng-click="question.nextQuestion(key)" type="button">{{key}}</button>{{value}}
+    <div ng-repeat="(key, value) in qVM.question.options">
+      <button ng-disabled='qVM.answered' ng-click="qVM.nextQuestion(key)" type="button">{{key}}</button>{{value}}
     </div>
   </div>
 </section>

@@ -52,7 +52,7 @@ body {
           outline: none;
         }
 
-        .arrow-right {
+        .triangle-right {
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
@@ -72,7 +72,7 @@ body {
         left: 100px;
       }
 
-      .arrow-right {
+      .triangle-right {
         right: -31px;
         top: 30px;
       }
@@ -88,7 +88,7 @@ body {
         // @include animation(upAndDown .5s 1);
       }
 
-      .arrow-right {
+      .triangle-right {
         right: -31px;
         top: 8px;
       }

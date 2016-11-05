@@ -18,7 +18,7 @@
       }).state('quiz.question', {
         url: '/quiz/:id/question/:questionId',
         templateUrl: 'question.html',
-        controller: 'questionController as question'
+        controller: 'questionController as qVM'
 
       }).state('child', {
         url: 'child',
