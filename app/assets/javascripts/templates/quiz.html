@@ -1,3 +1,10 @@
 <div class="quiz-container">
   <ui-view></ui-view>
 </div>
+
+<div ng-show="quiz.quizMessage" class="quizMessageModal">
+  <h4 id="quizMessage">
+    {{quiz.quizMessage}}
+  </h4>
+  <button ng-click="quiz.goToNextState()" type="button">{{quiz.buttonMessage}}</button>
+</div>
