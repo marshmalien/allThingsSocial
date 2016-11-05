@@ -5,11 +5,14 @@
     this.currentQuizQuestions = $scope.questions[$stateParams.id];
     this.question = this.currentQuizQuestions[$stateParams.questionId];
     this.answered = false;
+    this.answerResponse = "Bummer!";
 
     this.nextQuestion = function(key) {
       this.answered = true;
       $scope.quiz.answerArray.push({userInput: key, answer: this.question.answer});
-
+      if (this.question.answer === key) {
+        this.answerResponse = "Correct!";
+      }
       if (Number($stateParams.questionId) < this.currentQuizQuestions.length - 1) {
         $timeout(function () {
           $state.go('quiz.question', {id: $stateParams.id, questionId: Number($stateParams.questionId) + 1 });
