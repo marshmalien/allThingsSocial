@@ -1,9 +1,9 @@
 angular.module('app')
 .controller('quizController', function($stateParams, $location, $anchorScroll, $scope, $state) {
-  this.inProgress = true;
   this.rightAnswers = 0;
   this.quizMessage = "";
   this.buttonMessage = "";
+  this.passQuiz = false;
   this.nextState = "home";
   var self = this;
 
@@ -133,17 +133,25 @@ angular.module('app')
     if ($stateParams.id === '1') {
       if (this.rightAnswers === self.answerArray.length) {
         this.quizMessage = "Awesome! You passed. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Next Tutorial";
+        this.passQuiz = true;
         this.nextState = 'child';
       } else {
         this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Try Again"
+        this.passQuiz = false;
         this.nextState = 'home'
       }
     } else if ($stateParams.id === '2') {
       if (this.rightAnswers === self.answerArray.length) {
         this.quizMessage = "Awesome! You passed. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Next Tutorial"
+        this.passQuiz = true;
         this.nextState = 'home';
       } else {
         this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Try Again"
+        this.passQuiz = false;
         this.nextState = 'child'
       }
     }

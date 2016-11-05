@@ -2,9 +2,9 @@
   <ui-view></ui-view>
 </div>
 
-<div ng-show="quiz.quizMessage" class="quizMessageModal">
+<div ng-show="quiz.quizMessage" class="quizMessageModal" ng-class="{'passColor': quiz.passQuiz}">
   <h4 id="quizMessage">
     {{quiz.quizMessage}}
   </h4>
-  <button ng-click="quiz.goToNextState()" type="button">{{quiz.buttonMessage}}</button>
+  <button class="submitButton" ng-click="quiz.goToNextState()" type="button">{{quiz.buttonMessage}}</button>
 </div>
