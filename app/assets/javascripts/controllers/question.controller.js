@@ -20,7 +20,7 @@
       if (Number($stateParams.questionId) < this.currentQuizQuestions.length - 1) {
         $timeout(function () {
           $state.go('quiz.question', {id: $stateParams.id, questionId: Number($stateParams.questionId) + 1 });
-        }, 2000);
+        }, 1000);
       } else {
         $scope.quiz.submitAnswers();
       }

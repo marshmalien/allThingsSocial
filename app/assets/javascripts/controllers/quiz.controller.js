@@ -1,7 +1,12 @@
 angular.module('app')
-.controller('quizController', function($stateParams, $location, $anchorScroll, $scope) {
-  this.inProgress = true;
+.controller('quizController', function($stateParams, $location, $anchorScroll, $scope, $state) {
+  this.rightAnswers = 0;
+  this.quizMessage = "";
+  this.buttonMessage = "";
+  this.passQuiz = false;
+  this.nextState = "home";
   var self = this;
+
   this.quizOneQuestions = [
     {
       number: 1,
@@ -113,40 +118,49 @@ angular.module('app')
     $('.option' + num + ' button').removeClass('selected')
     $(event.target).addClass('selected');
   }
+
   /*****************************************
   Checks for right answers
   1) if anwser is right, rightAnswers will increment by 1
   2) message will then be displayed
   *****************************************/
   this.submitAnswers = function() {
-    var rightAnswers = 0;
     for(var i = 0; i < self.answerArray.length; i++) {
       if(self.answerArray[i].userInput === self.answerArray[i].answer) {
-        rightAnswers++;
+        this.rightAnswers++;
       }
     }
-    console.log(rightAnswers);
-    if(rightAnswers < self.answerArray.length) {
-      $('<h4>').attr('id', 'quizMessage')
-        .html('Sorry! You did not pass. You got ' + rightAnswers + ' out of ' + self.answerArray.length)
-        .appendTo('.quiz-container')
-        .css('background', '#BE4824')
-      $('<button>').attr('type', 'button')
-        .html('Try Again').appendTo('#quizMessage');
-    } else {
-      $('<h4>').attr('id', 'quizMessage').html('Awesome! You passed. You got ' + rightAnswers + ' out of ' + self.answerArray.length)
-        .appendTo('.quiz-container')
-        .css('background', '#1DC985')
-      $('<button>').attr({'type': 'button', 'ui-sref': "child"})
-        .html('Take me to Tutorial 2')
-        .appendTo('#quizMessage');
+    if ($stateParams.id === '1') {
+      if (this.rightAnswers === self.answerArray.length) {
+        this.quizMessage = "Awesome! You passed. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Next Tutorial";
+        this.passQuiz = true;
+        this.nextState = 'child';
+      } else {
+        this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Try Again"
+        this.passQuiz = false;
+        this.nextState = 'home'
+      }
+    } else if ($stateParams.id === '2') {
+      if (this.rightAnswers === self.answerArray.length) {
+        this.quizMessage = "Awesome! You passed. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Next Tutorial"
+        this.passQuiz = true;
+        this.nextState = 'home';
+      } else {
+        this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
+        this.buttonMessage = "Try Again"
+        this.passQuiz = false;
+        this.nextState = 'child'
+      }
     }
-    /*****************************************
-    When user submits answers, page will scroll to bottom
-    of page to display message
-    *****************************************/
-    $location.hash('quizMessage');
-    $anchorScroll();
   }
+
+
+  this.goToNextState = function() {
+    $state.go(this.nextState)
+  }
+
 
 });

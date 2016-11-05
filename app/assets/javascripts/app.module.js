@@ -16,7 +16,7 @@
         controller: 'quizController as quiz'
 
       }).state('quiz.question', {
-        url: '/quiz/:id/question/:questionId',
+        url: '/question/:questionId',
         templateUrl: 'question.html',
         controller: 'questionController as qVM'
 
