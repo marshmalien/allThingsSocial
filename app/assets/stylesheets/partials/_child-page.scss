@@ -55,7 +55,7 @@ body {
           outline: none;
         }
 
-        .arrow-right {
+        .triangle-right {
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
@@ -63,7 +63,7 @@ body {
           border-left: 20px solid #FC790B;
           position: absolute;
         }
-        .arrow-left {
+        .triangle-left {
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
@@ -71,7 +71,7 @@ body {
           border-right: 20px solid #FC790B;
           position: absolute;
         }
-        .arrow-down {
+        .triangle-down {
           width: 0;
           height: 0;
           border-top: 20px solid #FC790B;
@@ -83,8 +83,8 @@ body {
     }
 
     .stepOne {
-      top: 46%;
-      left: 80%;
+      top: 420px;
+      right: 38px;
       width: 220px;
 
       img {
@@ -92,15 +92,15 @@ body {
         top: 240px;
       }
 
-      .arrow-left {
+      .triangle-left {
         right: 207px;
         top: 176px;
       }
     }
 
     .stepTwo {
-      top: 33%;
-      left: 79%;
+      top: 277px;
+      right: 70px;
       width: 200px;
 
       img {
@@ -109,17 +109,17 @@ body {
         // @include animation(upAndDown .5s 1);
       }
 
-      .arrow-left {
+      .triangle-left {
         right: 187px;
         top: 60px;
       }
     }
 
     .stepThree {
-      left: 61%;
-      top: 8%;
+      right: 221px;
+      top: 160px;
 
-      .arrow-down {
+      .triangle-down {
         bottom: -35px;
         left: 96px;
       }
