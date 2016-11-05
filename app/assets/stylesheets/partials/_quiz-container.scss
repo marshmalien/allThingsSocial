@@ -58,13 +58,13 @@
           color: #fff;
           border: #fff solid 2px;
         }
+      }
 
-        &.selected {
-          background: #FC790B;
-          color: #fff;
-          border: #FCA257 solid 2px;
-          font-weight: 400;
-        }
+      .selected {
+        background: #FC790B;
+        color: #fff;
+        border: #FCA257 solid 2px;
+        font-weight: 400;
       }
 
       div {

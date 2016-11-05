@@ -112,7 +112,18 @@ angular.module('app')
       answer: answer
     })
   }
-
+  /*****************************************
+  Toggling multi-choice answers (for each question)
+  *****************************************/
+  this.toggleStatus = function(event, num) {
+    $('.option' + num + ' button').removeClass('selected')
+    $(event.target).addClass('selected');
+  }
+  /*****************************************
+  Checks for right answers
+  1) if anwser is right, rightAnwers will increment by 1
+  2) message will then be displayed
+  *****************************************/
   this.submitAnswers = function() {
     var rightAnwers = 0;
     for(var i = 0; i < self.answerArray.length; i++) {
@@ -135,7 +146,10 @@ angular.module('app')
         .html('Take me to Tutorial 2')
         .appendTo('#quizMessage');
     }
-
+    /*****************************************
+    When user submits answers, page will scroll to bottom
+    of page to display message
+    *****************************************/
     $location.hash('quizMessage');
     $anchorScroll();
   }
