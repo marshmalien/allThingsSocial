@@ -4,19 +4,23 @@
   angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-      $stateProvider.state('parent', {
-        url: '/',
-        abstract: true,
-        template: '<ui-view></ui-view>',
-      }).state('parent.home', {
+      $stateProvider.state('home', {
         url: 'home',
         templateUrl: 'home.html',
         controller: 'homepageController as homepage'
-      }).state('parent.quiz', {
-        url: 'quiz/:id',
+
+      }).state('quiz', {
+        url: '/quiz/:id',
+        abstract: true,
         templateUrl: 'quiz.html',
         controller: 'quizController as quiz'
-      }).state('parent.child', {
+
+      }).state('quiz.question', {
+        url: '/quiz/:id/question/:questionId',
+        templateUrl: 'question.html',
+        controller: 'questionController as question'
+
+      }).state('child', {
         url: 'child',
         templateUrl: 'child.html',
         controller: 'childpageController as childpage'

@@ -1,0 +1,11 @@
+<section>
+  <div class="question">
+    <h3>{{question.question.number}}</h3>
+    <p>{{question.question.question}}</p>
+  </div>
+  <div class="options">
+    <div ng-repeat="(key, value) in question.question.options">
+      <button ng-click="question.nextQuestion(key)" type="button">{{key}}</button>{{value}}
+    </div>
+  </div>
+</section>

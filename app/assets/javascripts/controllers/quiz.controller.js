@@ -1,6 +1,6 @@
 angular.module('app')
-.controller('quizController', function($stateParams, $location, $anchorScroll) {
-
+.controller('quizController', function($stateParams, $location, $anchorScroll, $scope) {
+  this.inProgress = true;
   var self = this;
   this.quizOneQuestions = [
     {
@@ -95,7 +95,7 @@ angular.module('app')
     }
   ]
 
-  this.questions = {
+  $scope.questions = {
     "1": this.quizOneQuestions,
     "2": this.quizTwoQuestions
   };
@@ -131,7 +131,7 @@ angular.module('app')
       $('<h4>').attr('id', 'quizMessage').html('Awesome! You passed. You got ' + rightAnwers + ' out of ' + self.answerArray.length)
         .appendTo('.quiz-container')
         .css('background', '#1DC985')
-      $('<button>').attr({'type': 'button', 'ui-sref': "parent.child"})
+      $('<button>').attr({'type': 'button', 'ui-sref': "child"})
         .html('Take me to Tutorial 2')
         .appendTo('#quizMessage');
     }
