@@ -4,6 +4,8 @@
   angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
     .config(function($stateProvider, $urlRouterProvider) {
 
+      $urlRouterProvider.otherwise('login');
+
       $stateProvider.state('parent', {
         url: '/',
         abstract: true,
@@ -20,6 +22,14 @@
         url: 'child',
         templateUrl: 'child.html',
         controller: 'childpageController as childpage'
-      })
-    })
+      }).state('parent.login', {
+        url: 'login',
+        templateUrl: 'login.html',
+        controller: 'loginController as login'
+      }).state('parent.register', {
+        url: 'register',
+        templateUrl: 'register.html',
+        controller: 'registerController as register'
+      });
+    });
 })();

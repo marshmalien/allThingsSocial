@@ -1,0 +1,104 @@
+.login-container {
+    background: url('/assets/pattern.png');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  .logo-container {
+    background: $mediumBlue;
+    padding: 20px 0;
+
+    .logo {
+      background-image: url(Logo.svg);
+      height: 60px;
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+
+  .login {
+    width: 550px;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 40px;
+      color: $mediumBlue;
+    }
+
+    label {
+      width: 30%;
+      float: left;
+      padding-top: 26px;
+      font-size: 18px;
+      color: #888888;
+
+      &:nth-child(1) {
+        padding-top: 22px;
+      }
+
+      &:nth-child(5) {
+        padding-top: 29px;
+      }
+    }
+
+    input {
+      width: 70%;
+      float: right;
+      margin-top: 15px;
+      outline: none;
+      border-radius: 5px;
+      border: #ddd solid 2px;
+      background: #eee;
+      padding: 5px 10px;
+
+      &:focus {
+        border: #FC790B solid 2px;
+      }
+    }
+
+    .button {
+      width: 100%;
+      display: flex;
+
+      input[type='button'] {
+        width: 180px;
+        padding: 10px 0;
+        border-radius: 25px;
+        background: #FC790B;
+        border: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100;
+        margin: auto;
+        margin-top: 25px;
+        cursor: pointer;
+      	box-shadow:0px 1px 0px #FC790B;
+      }
+    }
+
+    form {
+      fieldset {
+        background: #fff;
+        border: $lightBlue solid 15px;
+        padding: 20px 30px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 400;
+        color: #888888;
+
+        a {
+          text-decoration: none;
+          color: #FC790B;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

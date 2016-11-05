@@ -1,0 +1,33 @@
+<section class="login-container">
+    <div class='logo-container'>
+      <div class='logo'></div>
+    </div>
+    <div class="login">
+      <h1>Let's Get You Registered!</h1>
+      <form>
+        <fieldset>
+          <!-- First Name Field -->
+          <label for="username">First Name:</label>
+          <input id="username" type="text">
+          <!-- Last Name Field -->
+          <label for="username">Last Name:</label>
+          <input id="username" type="text">
+          <!-- Username Field -->
+          <label for="username">Username:</label>
+          <input id="username" type="text">
+          <!-- Password Field -->
+          <label for="password">Password:</label>
+          <input id="password" type="password">
+          <!-- Image Field -->
+          <label for="profilePicture">Profile Picture:</label>
+          <input id="profilePicture" type="file" value="fileupload">
+          <!-- Submit Button -->
+          <div class="button">
+            <input ui-sref="parent.home" type="button" value="Submit">
+          </div>
+        </fieldset>
+        <h4>Opps, nevermind I do have an <a ui-sref="parent.login">account</a>.</h4>
+      </form>
+    </div>
+
+</section>
