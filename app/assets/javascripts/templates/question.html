@@ -1,4 +1,5 @@
-<h2 ng-show='qVM.answered'>{{qVM.answerResponse}}</h2>
+<h2 ng-class="{'correct-response': qVM.isCorrect, 'incorrect-response': !qVM.isCorrect}">{{qVM.answerResponse}}</h2>
+
 <section>
   <div class="question">
     <h3>{{qVM.question.number}}</h3>
