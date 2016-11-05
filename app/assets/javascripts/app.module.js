@@ -4,13 +4,9 @@
   angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-      $urlRouterProvider.otherwise('login');
+      //$urlRouterProvider.otherwise('login');
 
-      $stateProvider.state('parent', {
-        url: '/',
-        abstract: true,
-        template: '<ui-view></ui-view>',
-      }).state('parent.home', {
+      $stateProvider.state('home', {
         url: 'home',
         templateUrl: 'home.html',
         controller: 'homepageController as homepage'
@@ -27,11 +23,11 @@
         url: 'child',
         templateUrl: 'child.html',
         controller: 'childpageController as childpage'
-      }).state('parent.login', {
+      }).state('login', {
         url: 'login',
         templateUrl: 'login.html',
         controller: 'loginController as login'
-      }).state('parent.register', {
+      }).state('register', {
         url: 'register',
         templateUrl: 'register.html',
         controller: 'registerController as register'

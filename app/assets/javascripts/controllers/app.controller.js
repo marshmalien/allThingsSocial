@@ -5,8 +5,9 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http'];
+  AppController.$inject = ['$http', '$state'];
 
-  function AppController($http) {
+  function AppController($http, $state) {
+    $state.go('login');
   };
 })();
