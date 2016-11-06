@@ -9,6 +9,7 @@
       },
 
       login: function(user) {
+        delete user.password;
         $cookies.putObject(key, user);
       },
 
