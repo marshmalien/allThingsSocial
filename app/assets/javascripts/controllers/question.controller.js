@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  angular.module('app').controller('questionController', function($stateParams, $state, $scope, $timeout) {
+  angular.module('app').controller('questionController', ["$stateParams", "$state", "$scope", "$timeout",
+  function($stateParams, $state, $scope, $timeout) {
     this.currentQuizQuestions = $scope.questions[$stateParams.id];
     this.question = this.currentQuizQuestions[$stateParams.questionId];
     this.answered = false;
@@ -27,5 +28,5 @@
         $scope.quiz.submitAnswers();
       }
     }
-  });
+  }]);
 })();

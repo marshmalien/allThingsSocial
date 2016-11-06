@@ -1,4 +1,7 @@
-angular.module('app')
-.controller('registerController', function() {
+(function() {
+  'use strict';
+  angular.module('app')
+  .controller('registerController', function() {
 
-});
+  });
+})();

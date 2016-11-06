@@ -2,9 +2,7 @@
   'use strict';
 
   angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
-    .config(function($stateProvider, $urlRouterProvider) {
-
-      //$urlRouterProvider.otherwise('login');
+    .config(["$stateProvider", function($stateProvider) {
 
       $stateProvider.state('home', {
         url: 'home',
@@ -32,5 +30,5 @@
         templateUrl: 'register.html',
         controller: 'registerController as register'
       });
-    });
+    }]);
 })();
