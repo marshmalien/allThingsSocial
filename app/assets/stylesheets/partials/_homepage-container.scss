@@ -99,7 +99,7 @@ body {
       .up-arrow {
         bottom: -75px;
         left: 100px;
-        // @include animation(upAndDown .5s 1);
+        @include animation(bounce 2.0s infinite);
       }
 
       .triangle-right {
