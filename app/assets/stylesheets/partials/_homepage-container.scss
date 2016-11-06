@@ -27,9 +27,15 @@ body {
           color: #fff;
         }
 
-        img {
-          width: 60px;
-          position: absolute;
+        @each $direction in $directions {
+          div.#{$direction}-arrow {
+            background-image: url(asset_path('#{$direction}-arrow.svg'));
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 60px;
+            position: absolute;
+            width: 60px;
+          }
         }
 
         p {
@@ -75,7 +81,7 @@ body {
       top: 148px;
       left: 15px;
 
-      img {
+      .up-arrow {
         bottom: -75px;
         left: 100px;
       }
@@ -90,7 +96,7 @@ body {
       top: 330px;
       left: 15px;
 
-      img {
+      .up-arrow {
         bottom: -75px;
         left: 100px;
         // @include animation(upAndDown .5s 1);
@@ -111,7 +117,7 @@ body {
         bottom: -35px;
       }
 
-      img {
+      .down-arrow {
         top: -80px;
         left: 80px;
       }

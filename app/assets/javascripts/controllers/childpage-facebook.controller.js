@@ -3,9 +3,9 @@
   angular.module('app').controller('childpageController', ['$scope', function($scope) {
     $scope.$parent.stepInTutorial = "2";
     this.instructionSteps = [
-      {name: 'stepOne', triangle: 'left', arrow: 'down-arrow.svg', description: "This is where you can write message for all of your daughter's friends to see. Please keep them short and sweet!"},
-      {name: 'stepTwo', triangle: 'left', arrow: 'up-arrow.svg', description: 'This is where you will send 99% of your messages to your daughter.'},
-      {name: 'stepThree', triangle: 'down', arrow: 'left-arrow.svg', description: "You probably don't need to suggest friends for your daughter."},
+      {name: 'stepOne', triangle: 'left', arrow: 'down', description: "This is where you can write message for all of your daughter's friends to see. Please keep them short and sweet!"},
+      {name: 'stepTwo', triangle: 'left', arrow: 'up', description: 'This is where you will send 99% of your messages to your daughter.'},
+      {name: 'stepThree', triangle: 'down', arrow: 'left', description: "You probably don't need to suggest friends for your daughter."},
       {name: 'stepComplete', triangle: null, arrow: null, description: 'You made it through the tutorial. Are you ready for the quiz?'}
     ]
 
