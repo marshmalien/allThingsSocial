@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('app', ['ui.router', 'LocalStorageModule', 'templates'])
+  angular.module('app', ['ui.router', 'LocalStorageModule', 'templates', 'ngCookies'])
     .config(["$stateProvider", function($stateProvider) {
 
       $stateProvider.state('home', {
