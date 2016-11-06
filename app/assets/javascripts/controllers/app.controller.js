@@ -5,9 +5,10 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http', '$scope'];
+  AppController.$inject = ['$http', '$state', '$scope'];
 
-  function AppController($http, $scope) {
+  function AppController($http, $state, $scope) {
     $scope.stepInTutorial = "0";
+    $state.go('login');
   };
 })();
