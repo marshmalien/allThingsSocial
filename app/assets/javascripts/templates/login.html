@@ -14,7 +14,7 @@
           <input ng-model="login.user.password" id="password" type="password">
           <!-- Submit Button -->
           <div class="button">
-            <input ng-click="login.signup.post(login.user.name)" ui-sref="home" type="button" value="Log Me In!">
+            <input ng-click="login.session.login(login.user); login.signup.post(login.user.name);" ui-sref="home" type="button" value="Log Me In!">
           </div>
         </fieldset>
         <h4>Don't have an account yet? Let's get you <a ui-sref="register">registered</a>.</h4>
@@ -22,5 +22,3 @@
     </div>
 
 </section>
-
-<!-- login.session.login(login.user); -->

@@ -11,7 +11,7 @@
             score: 0
           }
         }).then(function(response) {
-          console.log(response);
+          // console.log(response);
           console.log('success!');
         });
       }
