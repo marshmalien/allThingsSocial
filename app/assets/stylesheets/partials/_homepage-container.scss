@@ -60,6 +60,14 @@ body {
           border-left: 20px solid #FC790B;
           position: absolute;
         }
+        .triangle-down {
+          width: 0;
+          height: 0;
+          border-top: 20px solid #FC790B;
+          border-right: 20px solid transparent;
+          border-left: 20px solid transparent;
+          position: absolute;
+        }
       }
     }
 
@@ -95,8 +103,18 @@ body {
     }
 
     .stepThree {
-      right: 85px;
-      bottom: 0;
+      right: 45px;
+      bottom: -30px;
+
+      .triangle-down {
+        left: 100px;
+        bottom: -35px;
+      }
+
+      img {
+        top: -80px;
+        left: 80px;
+      }
     }
 
     .stepComplete {
