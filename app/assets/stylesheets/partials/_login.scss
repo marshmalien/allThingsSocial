@@ -1,5 +1,5 @@
 .login-container {
-    background: url('/assets/pattern.png');
+    background: url(asset_path('pattern.png'));
     position: absolute;
     top: 0;
     bottom: 0;
@@ -11,7 +11,7 @@
     padding: 20px 0;
 
     .logo {
-      background-image: url(Logo.svg);
+      background-image: url(asset_path('Logo.svg'));
       height: 60px;
       width: 100px;
       margin: 0 auto;

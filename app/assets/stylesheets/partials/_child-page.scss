@@ -5,7 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
     &#child-one {
-      background: url(molly_fb.png);
+      background: url(asset_path('molly_fb.png'));
       background-size: contain;
       background-repeat: no-repeat;
     }

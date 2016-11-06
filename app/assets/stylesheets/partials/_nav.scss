@@ -21,13 +21,13 @@ nav {
   }
   div {
     &.logo {
-      background-image: url(Logo.svg);
+      background-image: url(asset_path('Logo.svg'));
       height: 60px;
       width: 100px;
     }
     &.triangle {
       position: absolute;
-      background-image: url(Triangle.svg);
+      background-image: url(asset_path('Triangle.svg'));
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;

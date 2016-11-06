@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 
   .homepage-container {
-    background: url(/assets/homepageFb.png) no-repeat;
+    background: url(asset_path('homepageFb.png')) no-repeat;
     background-size: cover;
     height: 675px;
 
