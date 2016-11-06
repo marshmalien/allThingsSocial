@@ -11,7 +11,7 @@
       }).state('profile', {
         url: 'profile',
         templateUrl: 'profile.html',
-        controller: 'profileController as profile '
+        controller: 'profileController as profile'
       }).state('quiz', {
         url: '/quiz/:id',
         abstract: true,

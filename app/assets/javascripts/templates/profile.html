@@ -1,3 +1,26 @@
-<div class="profile-pic">
-  <img src="" />
-</div>
+<main id="profile-page">
+  <div class="profile-pic-container">
+    <div class="profile-pic"></div>
+    <h1>Mr. Jiggle Puff</h1>
+    <h2>Jigglypuff</h2>
+    <h3>100 points</h3>
+  </div>
+
+  <section class="wrapper">
+    <ul class="tabs">
+      <li ng-class="{active: profile.isSet('user')}">
+        <a href ng-click="profile.setTab('user')">User</a></li>
+      <li ng-class="{active: profile.isSet('badges')}">
+        <a href ng-click="profile.setTab('badges')">Badges</a></li>
+    </ul>
+
+    <div ng-show="profile.isSet('user')">
+      <h4>User tab</h4>
+    </div>
+
+    <div ng-show="profile.isSet('badges')">
+      <div class="medal"></div>
+      <div class="badge"></div>
+    </div>
+  </section>
+</main>
