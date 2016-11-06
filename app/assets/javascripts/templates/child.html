@@ -1,6 +1,4 @@
-<!-- <div class="child-fb" id="child-one" ng-click="vm.scrollTo('child-two')"></div>
-<div class="child-fb" id="child-two" ng-click="vm.scrollTo('child-one')"></div> -->
-<div class="child-fb" id="child-one">
+<div ng-cloak class="child-fb" id="child-one">
   <section ng-repeat="step in childpage.instructionSteps" class="{{step.name}}">
     <div class="step-container">
       <h1 ng-if="step.name === 'stepComplete'">Yay!</h1>

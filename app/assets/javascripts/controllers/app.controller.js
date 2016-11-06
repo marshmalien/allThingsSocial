@@ -5,10 +5,15 @@
     .module('app')
     .controller('AppController', AppController);
 
-  AppController.$inject = ['$http', '$state', '$scope'];
+  AppController.$inject = ['$http', '$state', '$scope', 'session'];
 
-  function AppController($http, $state, $scope) {
+  function AppController($http, $state, $scope, session) {
     $scope.stepInTutorial = "0";
-    $state.go('login');
+
+    if (session.currentUser()) {
+      $state.go('home');
+    } else {
+      $state.go('login');
+    }
   };
 })();
