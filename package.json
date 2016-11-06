@@ -3,7 +3,7 @@
     "angular": "^1.5.8",
     "angular-local-storage": "^0.5.0",
     "angular-ui-router": "^0.3.1",
-    "normalize.css": "^5.0.0"
+    "normalize.scss": "^0.1.0"
   },
   "scripts": {
     "start": "rails server"
