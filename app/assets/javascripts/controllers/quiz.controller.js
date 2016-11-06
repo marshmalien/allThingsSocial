@@ -112,14 +112,6 @@ angular.module('app')
   }
 
   /*****************************************
-  Toggling multi-choice answers (for each question)
-  *****************************************/
-  this.toggleStatus = function(event, num) {
-    $('.option' + num + ' button').removeClass('selected')
-    $(event.target).addClass('selected');
-  }
-
-  /*****************************************
   Checks for right answers
   1) if anwser is right, rightAnswers will increment by 1
   2) message will then be displayed

@@ -8,8 +8,10 @@
     this.isCorrect = false;
     this.answerResponse = "";
 
-    this.nextQuestion = function(key) {
+    this.nextQuestion = function(key, $event) {
       this.answered = true;
+      $($event.target).addClass('selected');
+
       $scope.quiz.answerArray.push({userInput: key, answer: this.question.answer});
       if (this.question.answer === key) {
         this.answerResponse = "Correct!";
