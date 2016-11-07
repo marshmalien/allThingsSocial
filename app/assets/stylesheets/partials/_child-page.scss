@@ -6,7 +6,7 @@ body {
     height: 100vh;
     &#child-one {
       background: url(asset_path('molly_fb.png'));
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
     }
 
@@ -111,7 +111,7 @@ body {
       width: 200px;
 
       .up-arrow {
-        bottom: -75px;
+        bottom: -95px;
         left: 60px;
         animation: bounce 1.0s infinite;
       }
@@ -141,7 +141,7 @@ body {
     .stepComplete {
       margin-left: auto;
       margin-right: auto;
-      top: 190px;
+      top: 50%;
       left: 0;
       right: 0;
       width: 655px;
