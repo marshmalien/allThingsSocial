@@ -8,10 +8,10 @@
 
   <section class="wrapper">
     <ul class="tabs">
-      <li ng-class="{active: profile.isSet('user')}">
-        <a href ng-click="profile.setTab('user')">User</a></li>
-      <li ng-class="{active: profile.isSet('badges')}">
-        <a href ng-click="profile.setTab('badges')">Badges</a></li>
+      <li ng-class="{active: profile.isSet('user')}" ng-click="profile.setTab('user')">
+        <a href >User</a></li>
+      <li ng-class="{active: profile.isSet('badges')}" ng-click="profile.setTab('badges')">
+        <a href>Badges</a></li>
     </ul>
 
     <div class="user-info" ng-show="profile.isSet('user')">
@@ -21,9 +21,15 @@
       <label for="password"><h5>Password</h5><p>*****</p></label>
     </div>
 
-    <div ng-show="profile.isSet('badges')">
+    <div class="awards" ng-show="profile.isSet('badges')">
       <div class="medal"></div>
       <div class="badge"></div>
+      <div class="medal2"></div>
+      <div class="badge2"></div>
+      <div class="medal3"></div>
+      <div class="quality"></div>
+      <div class="shield"></div>
+      <div class="stars"></div>
     </div>
   </section>
 </main>
