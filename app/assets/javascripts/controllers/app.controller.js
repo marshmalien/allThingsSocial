@@ -9,6 +9,7 @@
 
   function AppController($http, $state, $scope, session) {
     $scope.stepInTutorial = "0";
+    $scope.session = session;
 
     console.log(session.currentUser());
 

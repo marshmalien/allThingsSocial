@@ -16,7 +16,7 @@ main#profile-page {
   padding-top: 100px;
   margin: 80px 0 0 20px;
   .profile-pic {
-    background: url(asset_path('jigglypuff'));
+    background: url(asset_path('debbie.jpg'));
     width: 250px;
     height: 250px;
     border: 10px solid #FFC107;
@@ -25,6 +25,25 @@ main#profile-page {
     background-color: white;
     position: absolute;
     top: 100px;
+  }
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    &.user-icon {
+      background-image: url(asset_path('avatar.svg'))
+    }
+    &.trophy {
+      background-image: url(asset_path('trophy.svg'))
+    }
   }
 }
 section.wrapper {
@@ -68,14 +87,30 @@ section.wrapper {
     height: 390px;
     display: flex;
     flex-direction: row;
-    h4 {
-      margin: 0;
+    &.user-info {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 40px;
+      label {
+        display: flex;
+        flex-direction: row;
+        h5 {
+          font-size: 20px;
+          margin: 0 20px 0 0;
+          align-self: center;
+        }
+        p {
+          flex-grow: 1;
+          font-size: 20px;
+          border-bottom: 5px solid $mediumBlue;
+        }
+      }
     }
     div {
       background-repeat: no-repeat;
       width: 100px;
       height: 100px;
-      margin: 10px;
+      margin: 30px;
       &.medal {
         background-image: url(asset_path('medal.svg'));
       }
