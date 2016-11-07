@@ -141,7 +141,7 @@
         if (this.rightAnswers === self.answerArray.length) {
           this.quizMessage = "Awesome! You passed. You got " + this.rightAnswers + " out of " + self.answerArray.length;
           this.buttonMessage = "Next Tutorial"
-          this.passQuiz = true;
+          this.passQuiz = true;\
           this.nextState = 'home';
         } else {
           this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
