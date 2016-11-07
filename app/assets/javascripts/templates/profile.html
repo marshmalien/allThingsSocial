@@ -1,9 +1,9 @@
 <main id="profile-page">
   <div class="profile-pic-container">
     <div class="profile-pic"></div>
-    <h1>Mr. Jiggle Puff</h1>
-    <h2>Jigglypuff</h2>
-    <h3>100 points</h3>
+    <h1>Debbie Smith</h1>
+    <span><div class="user-icon"></div><h2>mollysmom</h2></span>
+    <span><div class="trophy"></div><h2>100 points</h2></span>
   </div>
 
   <section class="wrapper">
@@ -14,8 +14,11 @@
         <a href ng-click="profile.setTab('badges')">Badges</a></li>
     </ul>
 
-    <div ng-show="profile.isSet('user')">
-      <h4>User tab</h4>
+    <div class="user-info" ng-show="profile.isSet('user')">
+      <label for="username"><h5>Username</h5><p>mollysmom</p></label>
+      <label for="name"><h5>Name</h5><p>Debbie Smith</p></label>
+      <label for="email"><h5>Email</h5><p>debbie-smith@gmail.com</p></label>
+      <label for="password"><h5>Password</h5><p>*****</p></label>
     </div>
 
     <div ng-show="profile.isSet('badges')">

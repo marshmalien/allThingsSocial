@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('app').factory('session', ['$cookies', function($cookies) {
+  angular.module('app').factory('session', ['$cookies', '$state', function($cookies, $state) {
     var key = "ats_user";
 
     return {
@@ -14,7 +14,10 @@
       },
 
       logout: function() {
+        console.log('logout');
+
         $cookies.remove(key);
+        $state.go('login');
       }
     }
   }])
