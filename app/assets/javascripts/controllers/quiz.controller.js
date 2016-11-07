@@ -81,7 +81,7 @@
           },
           {
             number: 2,
-            question: 'Which feature should you use if you want to communciate privately with someone?',
+            question: 'Which feature should you use if you want to communicate privately with someone?',
             options: {
               a: 'Posting on their wall \/ profile page.',
               b: 'Messaging \/ chatting.',

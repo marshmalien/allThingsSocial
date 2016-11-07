@@ -137,11 +137,26 @@ body {
         animation: bounce 1.0s infinite;
       }
     }
+    .stepFour {
+      right: 401px;
+      top: 354px;
+
+      .triangle-down {
+        bottom: -35px;
+        left: 96px;
+      }
+
+      .left-arrow {
+        top: 40px;
+        right: -74px;
+        animation: bounce 1.0s infinite;
+      }
+    }
 
     .stepComplete {
       margin-left: auto;
       margin-right: auto;
-      top: 50%;
+      top: 40%;
       left: 0;
       right: 0;
       width: 655px;
