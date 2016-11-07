@@ -10,8 +10,10 @@
   function AppController($http, $state, $scope, session) {
     $scope.stepInTutorial = "0";
 
+    console.log(session.currentUser());
+
     if (session.currentUser()) {
-      $state.go('home');
+      $state.go('all-templates');
     } else {
       $state.go('login');
     }

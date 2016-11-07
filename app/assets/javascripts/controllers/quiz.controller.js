@@ -1,8 +1,8 @@
 (function() {
   'use strict';
   angular.module('app')
-  .controller('quizController', ["$stateParams", "$scope", "$state",
-  function($stateParams, $scope, $state) {
+  .controller('quizController', ["$stateParams", "$scope", "$state", "findUser", "session",
+  function($stateParams, $scope, $state, findUser, session) {
     this.rightAnswers = 0;
     this.quizMessage = "";
     this.buttonMessage = "";
@@ -131,6 +131,9 @@
           this.buttonMessage = "Next Tutorial";
           this.passQuiz = true;
           this.nextState = 'child';
+          var user = session.currentUser();
+          console.log(user.name);
+          findUser.get(user.name);
         } else {
           this.quizMessage = "Sorry! You did not pass. You got " + this.rightAnswers + " out of " + self.answerArray.length;
           this.buttonMessage = "Try Again"

@@ -1,0 +1,7 @@
+<div class="all-templates-container">
+  <div ng-repeat="media in all.socialMedia" class="social-media-container">
+      <div ui-sref="{{media.url}}" class="media" ng-style="{'background-color':media.color}">
+        <h1>{{media.media}}</h1>
+      </div>
+  </div>
+</div>

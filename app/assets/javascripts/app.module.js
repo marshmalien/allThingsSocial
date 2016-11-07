@@ -4,7 +4,11 @@
   angular.module('app', ['ui.router', 'LocalStorageModule', 'templates', 'ngCookies'])
     .config(["$stateProvider", function($stateProvider) {
 
-      $stateProvider.state('home', {
+      $stateProvider.state('all-templates', {
+        url: 'all',
+        templateUrl: 'all-templates.html',
+        controller: 'allTemplates as all'
+      }).state('home', {
         url: 'home',
         templateUrl: 'home.html',
         controller: 'homepageController as homepage'

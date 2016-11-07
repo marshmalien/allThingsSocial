@@ -96,6 +96,7 @@ body {
       .down-arrow {
         right: 66px;
         bottom: 250px;
+        animation: bounce 1.0s infinite;
       }
 
       .triangle-left {
@@ -112,7 +113,7 @@ body {
       .up-arrow {
         bottom: -75px;
         left: 60px;
-        // @include animation(upAndDown .5s 1);
+        animation: bounce 1.0s infinite;
       }
 
       .triangle-left {
@@ -133,19 +134,20 @@ body {
       .left-arrow {
         top: 40px;
         right: -74px;
+        animation: bounce 1.0s infinite;
       }
     }
 
     .stepComplete {
       margin-left: auto;
       margin-right: auto;
-      top: 20%;
+      top: 190px;
       left: 0;
       right: 0;
-      width: 625px;
+      width: 655px;
       font-size: 40px;
       padding: 30px 40px;
-      background: $darkBlue;
+      background: $mediumBlue;
 
       p {
         line-height: 45px !important;

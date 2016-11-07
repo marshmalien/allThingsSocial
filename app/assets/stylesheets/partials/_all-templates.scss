@@ -1,0 +1,23 @@
+.all-templates-container {
+  padding: 25px;
+  padding-top: 30px;
+
+  .social-media-container {
+    width: 33.3%;
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+
+    &:nth-child(3n) {
+      padding-right: 0px;
+    }
+
+    .media {
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

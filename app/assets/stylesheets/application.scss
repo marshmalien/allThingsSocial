@@ -14,13 +14,14 @@
 
 @import 'normalize.scss/normalize.scss';
 @import 'partials/variables';
+@import 'partials/animations';
 @import 'partials/body';
 @import 'partials/nav';
 @import 'partials/child-page';
-@import 'partials/animations';
 @import 'partials/homepage-container';
 @import 'partials/quiz-container';
 @import 'partials/login';
 @import 'partials/register';
 @import 'partials/quiz-message-modal';
-@import 'partials/profile'
+@import 'partials/profile';
+@import 'partials/all-templates';

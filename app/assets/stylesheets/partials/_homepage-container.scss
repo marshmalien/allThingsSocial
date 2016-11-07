@@ -82,8 +82,9 @@ body {
       left: 15px;
 
       .up-arrow {
-        bottom: -75px;
-        left: 100px;
+        bottom: -100px;
+        left: 90px;
+        animation: bounce 1.0s infinite;
       }
 
       .triangle-right {
@@ -97,9 +98,9 @@ body {
       left: 15px;
 
       .up-arrow {
-        bottom: -75px;
-        left: 100px;
-        @include animation(bounce 2.0s infinite);
+        bottom: -100px;
+        left: 90px;
+        animation: bounce 1.0s infinite;
       }
 
       .triangle-right {
@@ -120,6 +121,7 @@ body {
       .down-arrow {
         top: -80px;
         left: 80px;
+        animation: bounce 2.0s infinite;
       }
     }
 
@@ -129,10 +131,10 @@ body {
       top: 190px;
       left: 0;
       right: 0;
-      width: 625px;
+      width: 655px;
       font-size: 40px;
       padding: 30px 40px;
-      background: $darkBlue;
+      background: $mediumBlue;
 
       p {
         line-height: 45px !important;
@@ -145,7 +147,7 @@ body {
 
         &:first-child {
           margin-right: 55px;
-          background: #FC4A17;
+          background: #FC790B;
         }
 
         &:last-child {
