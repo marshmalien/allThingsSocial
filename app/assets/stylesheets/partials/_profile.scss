@@ -28,6 +28,25 @@ main#profile-page {
     position: absolute;
     top: 120px;
   }
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    &.user-icon {
+      background-image: url(asset_path('avatar.svg'))
+    }
+    &.trophy {
+      background-image: url(asset_path('trophy.svg'))
+    }
+  }
 }
 section.wrapper {
   background-color: none;
